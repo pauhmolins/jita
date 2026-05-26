@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JITA 2025 - JITA</title>
-    <link rel="icon" href="img/icon_new.png" type="image/png">
+    <link rel="icon" href="img/logo/logo.png" type="image/png">
     <style>
         * {
             margin: 0;
@@ -19,9 +19,11 @@
             overflow-x: hidden;
         }
 
+        /* Color palette used: https://coolors.co/2ea248-cce31e-454851-fceff9 */
+
         /* Header */
         .header {
-            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
             color: white;
             padding: 1rem 0;
             position: relative;
@@ -57,7 +59,7 @@
             font-size: 1.2rem;
             color: white;
             padding: 1rem;
-            background: #096B68;
+            background: #2EA248;
             text-align: center;
         }
 
@@ -87,7 +89,7 @@
 
         .submission-label {
             font-weight: 600;
-            color: #096B68;
+            color: #2EA248;
             width: 220px;
             min-width: 200px;
         }
@@ -139,7 +141,7 @@
         .event-date {
             font-size: 1.2rem;
             font-weight: 600;
-            /* color: #ffd700; */
+            /* color: #fceff9; */
             color: #333;
         }
 
@@ -152,7 +154,7 @@
         .nav {
             /* background: rgba(0, 0, 0, 0.9); */
             background: #033A66;
-            background: #096B68;
+            background: #2EA248;
             backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
@@ -188,14 +190,14 @@
 
         .nav-menu a:hover {
             background: rgba(255, 255, 255, 0.1);
-            border-bottom-color: #096B68;
+            border-bottom-color: #2EA248;
             transform: translateY(-2px);
         }
 
         /* Hero Section */
         .hero {
-            /* background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%); */
-            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            /* background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%); */
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
             color: white;
             padding: 4rem 0;
             text-align: center;
@@ -237,7 +239,7 @@
 
         .cta-button {
             display: inline-block;
-            background: #ffd700;
+            background: #fceff9;
             color: #333;
             padding: 1rem 2rem;
             text-decoration: none;
@@ -245,12 +247,13 @@
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(245, 204, 235, 0.3);
+            
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(245, 204, 235, 0.4);
         }
 
         /* Sections */
@@ -288,7 +291,7 @@
             transform: translateX(-50%);
             width: 60px;
             height: 4px;
-            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
             border-radius: 2px;
         }
 
@@ -335,7 +338,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #096B68;
+            color: #2EA248;
             margin-bottom: 0.5rem;
         }
 
@@ -357,7 +360,7 @@
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-            border-left: 5px solid #096B68;
+            border-left: 5px solid #2EA248;
         }
 
         .program-card:hover {
@@ -368,7 +371,7 @@
         .program-time {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #096B68;
+            color: #2EA248;
             margin-bottom: 1rem;
         }
 
@@ -415,7 +418,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
             margin: 0 auto 1.5rem;
             display: flex;
             align-items: center;
@@ -434,7 +437,7 @@
 
         .speaker-title {
             font-size: 1rem;
-            color: #096B68;
+            color: #2EA248;
             margin-bottom: 1rem;
         }
 
@@ -446,7 +449,7 @@
 
         /* Registration Section */
         .registration {
-            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%) !important;
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%) !important;
             color: white;
         }
 
@@ -476,7 +479,7 @@
         }
 
         .pricing-card.featured {
-            border: 2px solid #ffd700;
+            border: 2px solid #fceff9;
             transform: scale(1.05);
         }
 
@@ -490,7 +493,7 @@
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            color: #ffd700;
+            color: #fceff9;
         }
 
         .pricing-period {
@@ -510,7 +513,7 @@
         }
 
         .pricing-button {
-            background: #ffd700;
+            background: #fceff9;
             color: #333;
             padding: 1rem 2rem;
             border: none;
@@ -528,7 +531,7 @@
 
         /* Footer */
         .footer {
-            background: #2c3e50;
+            background: #454851;
             color: white;
             padding: 3rem 0 1rem;
         }
@@ -543,7 +546,7 @@
         .footer-section h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #ffd700;
+            color: #fceff9;
         }
 
         .footer-section p, .footer-section a {
@@ -553,7 +556,7 @@
         }
 
         .footer-section a:hover {
-            color: #ffd700;
+            color: #fceff9;
         }
 
         .footer-bottom {
@@ -579,7 +582,7 @@
 
         .info-card h3 {
             margin-bottom: 1rem;
-            color: #096B68;
+            color: #2EA248;
         }
 
         .info-card ul {
@@ -603,7 +606,7 @@
 
         .topics-card h3 {
             margin-bottom: 1rem;
-            color: #096B68;
+            color: #2EA248;
         }
 
         .topics-card p {
@@ -681,7 +684,7 @@
                 display: none;
                 flex-direction: column;
                 background: #033A66;
-                background: #096B68;
+                background: #2EA248;
                 overflow: hidden;
             }
 
@@ -713,7 +716,7 @@
 
         .important-note {
             background-color: #fff9e6;
-            border: 1px solid #ffd700;
+            border: 1px solid #fceff9;
             color: #8b6914;
             padding: 15px;
             margin: 20px 0;
@@ -722,7 +725,7 @@
 
         .extension-notice {
             background-color: #fff9e6;
-            border: 1px solid #ffd700;
+            border: 1px solid #fceff9;
             border-radius: 10px;
             padding: 1.5rem;
             margin-bottom: 2rem;
@@ -744,7 +747,7 @@
 
     .jita-conference {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+        background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
         border-radius: 20px;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         max-width: 900px;
@@ -760,7 +763,7 @@
     }
 
     .jita-header {
-        background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+        background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
         color: white;
         padding: 40px 30px;
         text-align: center;
@@ -791,7 +794,7 @@
     }
 
     .jita-program-table thead {
-        background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+        background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
         color: white;
     }
 
@@ -832,7 +835,7 @@
 
     .jita-time {
         font-weight: 600;
-        color: #096B68;
+        color: #2EA248;
         font-size: 1.05em;
         white-space: nowrap;
     }
@@ -844,7 +847,7 @@
 
     .jita-keynote {
         font-weight: 600;
-        color: #096B68;
+        color: #2EA248;
     }
 
         .jita-papers-list {
@@ -855,7 +858,7 @@
         margin-bottom: 12px;
         padding: 12px;
         background: linear-gradient(90deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
-        border-left: 3px solid #096B68;
+        border-left: 3px solid #2EA248;
         border-radius: 5px;
     }
 
@@ -865,7 +868,7 @@
 
     .jita-paper-number {
         font-weight: 700;
-        color: #096B68;
+        color: #2EA248;
         font-size: 0.95em;
     }
 
@@ -934,9 +937,9 @@
     <header class="header" style="background: white;">
         <div class="header-content" style="grid-template-columns: auto auto; justify-content: space-between;">
             <div class="logo" style="gap: 0;">
-                <img src="img/logo_updated.png" alt="Conference Logo" style="height: 65px; width: auto;">
+                <img src="img/logo/logo-text.png" alt="Conference Logo" style="height: 65px; width: auto;">
             </div>
-            <div class="event-details" style="text-align: right; color: #096B68;">
+            <div class="event-details" style="text-align: right; color: #2EA248;">
                 <div class="event-date">October 16, 2025</div>
                 <div class="event-location">ENS Paris-Saclay, France</div>
             </div>
@@ -991,7 +994,7 @@
                     
                     <p></p>
                     <div style="height: 20px;"></div>
-                    <h3 style="color: #096B68;">Topics of Interest</h3>
+                    <h3 style="color: #2EA248;">Topics of Interest</h3>
                     <p>Submissions are encouraged in areas including (but not limited to): 
 
                         Algorithms and Complexity, Bioinformatics, Centralized and Distributed algorithms, Cryptography and Security, 
@@ -1005,7 +1008,7 @@
                         <div class="info-card">
                             <h3>Important Dates</h3>
                             <ul>
-                                <li><strong>Paper Submission Deadline:</strong> <s>September 16, 2025</s> <span style="color: #096B68; font-weight: 600">September 21, 2025</span></li>
+                                <li><strong>Paper Submission Deadline:</strong> <s>September 16, 2025</s> <span style="color: #2EA248; font-weight: 600">September 21, 2025</span></li>
                                 <li><strong>Notification of Acceptance:</strong> September 30, 2025</li>
                                 <li><strong>Registration Deadline:</strong> October 02, 2025</li>
                                 <li><strong>Conference Date:</strong> October 16, 2025, at <a style="color: #333; font-weight: 600;" href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">ENS Paris-Saclay</a>, <span style="font-weight: 600;">Amphi 1Z28</span></li>
@@ -1244,7 +1247,7 @@
                 <p>Meet the teams behind the success of JITA 2025</p>
             </div>
             <!-- Junior Committee -->
-            <h3 style="margin-bottom: 1rem; color: #096B68;">Junior Committee</h3>
+            <h3 style="margin-bottom: 1rem; color: #2EA248;">Junior Committee</h3>
             <div class="speakers-grid">
                 
                 <div class="speaker-card">
@@ -1282,7 +1285,7 @@
             </div>
 
             <!-- Senior Committee -->
-            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #096B68;">Senior Committee</h3>
+            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #2EA248;">Senior Committee</h3>
             <div class="speakers-grid">
                 <div class="speaker-card">
                     <div class="speaker-avatar">MR</div>
@@ -1319,7 +1322,7 @@
             </div>
 
             <!-- Local Arrangement -->
-            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #096B68;">Local Arrangement</h3>
+            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #2EA248;">Local Arrangement</h3>
             <div class="speakers-grid">
                 <div class="speaker-card">
                     <div class="speaker-avatar" style="background: none; padding: 0;">
