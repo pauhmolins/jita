@@ -433,6 +433,7 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             flex: 0 1 280px;
+            position: relative;
         }
 
         .speaker-card:hover {
@@ -458,6 +459,17 @@
             font-weight: 600;
             margin-bottom: 0.5rem;
             color: #333;
+        }
+
+        .speaker-name a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .speaker-name a::after {
+            content: '';
+            position: absolute;
+            inset: 0;
         }
 
         .speaker-title {
@@ -1019,9 +1031,9 @@
                     <h3 style="color: #2EA248;">Topics of Interest</h3>
                     <p>Submissions are encouraged in areas including (but not limited to): 
 
-                        Algorithms and Complexity, Bioinformatics, Distributed Algorithms, Cryptography and Security,
-                        Quantum Computing, Graph Theory, Human-Computer Interaction, Modeling and Simulation, Optimization,
-                        Virtual and Augmented Reality, Formal Methods and Verification
+                        algorithms and complexity, bioinformatics, distributed algorithms, cryptography and security,
+                        quantum computing, graph theory, human-computer interaction, modeling and simulation, optimization,
+                        virtual and augmented reality, formal methods and verification.
 
                     </p>
                 </div>
@@ -1033,7 +1045,7 @@
                                 <li><strong>Paper Submission Deadline:</strong> September 9, 2026</li>
                                 <li><strong>Notification of Acceptance:</strong> September 23, 2026</li>
                                 <li><strong>Registration Deadline:</strong> September 25, 2026</li>
-                                <li><strong>Conference Date:</strong> October 9, 2026, at <a style="color: #333; font-weight: 600;" href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">Université Paris-Saclay</a></li>
+                                <li><strong>Conference Date:</strong> October 9, 2026, at <a style="color: #333; font-weight: 600;" href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment 660</a></li>
                             </ul>
                         </div>
 
@@ -1082,7 +1094,7 @@
             <div class="jita-conference">
             <div class="jita-header" id="program">
                 <h1>Conference Program</h1>
-                <div class="jita-date">On October 9, 2026, at <a style="color: #FFF; font-weight: 600;" href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">Université Paris-Saclay</a></div>
+                <div class="jita-date">On October 9, 2026, at <a style="color: #FFF; font-weight: 600;" href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment 660</a></div>
             </div>
             
             <div class="jita-content">
@@ -1212,24 +1224,26 @@
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
+                    <div class="speaker-avatar" style="background: none; padding: 0;">
+                        <img src="img/pau-de-las-heras-molins.png" alt="Pau De Las Heras Molins" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="speaker-name"><a href="https://paudelasheras.net/" target="_blank">Pau De Las Heras Molins</a></div>
+                    <div class="speaker-title">Institut Polytechnique de Paris</div>
+                </div>                
+                <div class="speaker-card">
                     <div class="speaker-avatar">CG</div>
-                    <div class="speaker-name">Chloé Godet</div>
+                    <div class="speaker-name"><a href="https://www.linkedin.com/in/chloe-godet/" target="_blank">Chloé Godet</a></div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">EK</div>
-                    <div class="speaker-name">Eirini Karoulla</div>
+                    <div class="speaker-name"><a href="https://www.linkedin.com/in/eirinikaroulla/" target="_blank">Eirini Karoulla</a></div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">SN</div>
                     <div class="speaker-name">Sheeja-Rani Sathyanesan Nadar</div>
                     <div class="speaker-title">Université Paris-Saclay</div>
-                </div>
-                <div class="speaker-card">
-                    <div class="speaker-avatar">PH</div>
-                    <div class="speaker-name">Pau De Las Heras Molins</div>
-                    <div class="speaker-title">Institut Polytechnique de Paris</div>
                 </div>
             </div>
 
@@ -1243,7 +1257,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">GB</div>
-                    <div class="speaker-name">Georgios Bakirtzis</div>
+                    <div class="speaker-name"><a href="https://bakirtzis.net/" target="_blank">Georgios Bakirtzis</a></div>
                     <div class="speaker-title">Institut Polytechnique de Paris</div>
                 </div>
                 <div class="speaker-card">
@@ -1253,7 +1267,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">PC</div>
-                    <div class="speaker-name">Pierre Coucheney</div>
+                    <div class="speaker-name"><a href="https://coucheney.github.io" target="_blank">Pierre Coucheney</a></div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
@@ -1283,9 +1297,12 @@
     <div class="container">
         <div class="section-header">
         <h2>Registration</h2>
-        <p>
+        <!-- <p>
             Registration is free but mandatory and can be done online 
             <a style="color: #FFF; font-weight: 700;" href="#" target="_blank">here</a>.
+        </p> -->
+        <p>
+            Registration will open soon! Stay tuned for updates and be ready to secure your spot at JITA 2026.
         </p>
         <!-- <p>According to the conference policy, AT LEAST ONE author of each accepted paper MUST register.</p> -->
         </div>
@@ -1300,22 +1317,22 @@
                     <h3>Contact Information</h3>
                     <p>Email: <a href="mailto:jita.conf.2026@gmail.com">jita.conf.2026@gmail.com</a></p>
                     <!-- <p>Phone: +1 (555) 123-4567</p> -->
-                    <p>Address: <a href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">Plateau de Saclay, France</a></p>
+                    <p>Address: <a href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment 660</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Junior Committee</h3>
                     <p><a href="#">Xiaoyuan Bai (Université Paris-Saclay)</a></p>
-                    <p><a href="#">Pau De Las Heras Molins (Institut Polytechnique de Paris)</a></p>
-                    <p><a href="#">Chloé Godet (Université Paris-Saclay)</a></p>
-                    <p><a href="#">Eirini Karoulla (Université Paris-Saclay)</a></p>
+                    <p><a href="https://paudelasheras.net/" target="_blank">Pau De Las Heras Molins (Institut Polytechnique de Paris)</a></p>
+                    <p><a href="https://www.linkedin.com/in/chloe-godet/" target="_blank">Chloé Godet (Université Paris-Saclay)</a></p>
+                    <p><a href="https://www.linkedin.com/in/eirinikaroulla/" target="_blank">Eirini Karoulla (Université Paris-Saclay)</a></p>
                     <p><a href="#">Sheeja-Rani Sathyanesan Nadar (Université Paris-Saclay)</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Senior Committee</h3>
                     <p><a href="#">Mathilde Arnaud (Université Paris-Saclay)</a></p>
-                    <p><a href="#">Georgios Bakirtzis (Institut Polytechnique de Paris)</a></p>
+                    <p><a href="https://bakirtzis.net/" target="_blank">Georgios Bakirtzis (Institut Polytechnique de Paris)</a></p>
                     <p><a href="#">Vincent Chau (Université Paris-Saclay)</a></p>
-                    <p><a href="#">Pierre Coucheney (Université Paris-Saclay)</a></p>
+                    <p><a href="https://coucheney.github.io" target="_blank">Pierre Coucheney (Université Paris-Saclay)</a></p>
                     <p><a href="#">Julien Signoles (Université Paris-Saclay)</a></p>
                 </div>
                 <div class="footer-section">
