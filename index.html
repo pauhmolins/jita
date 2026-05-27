@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JITA 2025 - JITA</title>
+    <title>JITA 2026</title>
     <link rel="icon" href="img/logo/logo.png" type="image/png">
     <style>
         * {
@@ -68,6 +68,8 @@
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
@@ -190,7 +192,7 @@
 
         .nav-menu a:hover {
             background: rgba(255, 255, 255, 0.1);
-            border-bottom-color: #2EA248;
+            border-bottom-color: rgba(255, 255, 255, 0.5);
             transform: translateY(-2px);
         }
 
@@ -394,10 +396,32 @@
             line-height: 1.6;
         }
 
+        /* Committee titles */
+        .committee-title {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            color: #2EA248;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .committee-title::before,
+        .committee-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #ddd;
+        }
+
         /* Speakers Section */
         .speakers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 2rem;
         }
 
@@ -408,6 +432,7 @@
             text-align: center;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            flex: 0 1 280px;
         }
 
         .speaker-card:hover {
@@ -940,14 +965,13 @@
                 <img src="img/logo/logo-text.png" alt="Conference Logo" style="height: 65px; width: auto;">
             </div>
             <div class="event-details" style="text-align: right; color: #2EA248;">
-                <div class="event-date">October 16, 2025</div>
-                <div class="event-location">ENS Paris-Saclay, France</div>
+                <div class="event-date">October 9, 2026</div>
+                <div class="event-location">Université Paris-Saclay, France</div>
             </div>
         </div>
     </header>
 
     <!-- Navigation -->
-
     <nav class="nav">
         <div class="nav-content">
             <div class="nav-toggle" id="navToggle">☰ Menu</div>
@@ -958,19 +982,17 @@
                 <li><a href="#submission">Submission</a></li>
                 <li><a href="#speakers">Organizers</a></li>
                 <li><a href="#registration">Registration</a></li>
-                <!-- <li><a href="#venue">Venue</a></li> -->
             </ul>
         </div>
     </nav>
 
-
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to JITA 2025</h1>
+            <h1>Welcome to JITA 2026</h1>
             <p>
                 Join us for the most innovative junior conference JITA, where Masters and PhD students 
-                showcase groundbreaking research and ignite collaborations in Computer Science !
+                showcase groundbreaking research and ignite collaborations in Computer Science!
             </p>
             <a href="#submission" class="cta-button">Submit Your Paper Now</a>
         </div>
@@ -980,12 +1002,12 @@
     <section id="about" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>About JITA 2025</h2>
-                <p>The Junior conference on Informatics: Theory and Applications </p>
+                <h2>About JITA 2026</h2>
+                <p>The Junior conference on Informatics: Theory and Applications</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p> JITA 2025 is the 2nd edition of the Junior conference on Informatics: Theory and Applications, a multidisciplinary 
+                    <p> JITA 2026 is the 3rd edition of the <strong>Junior conference on Informatics: Theory and Applications</strong>, a multidisciplinary 
                         conference that allows Masters and PhD students in various fields of Theoretical and Applied Computer Science to present 
                         their research results. Take the opportunity to share your research with colleagues, all the while honing your presentation 
                         skills, receiving feedback, and broadening your knowledge of Computer Science. Any Masters or PhD Student 
@@ -997,10 +1019,10 @@
                     <h3 style="color: #2EA248;">Topics of Interest</h3>
                     <p>Submissions are encouraged in areas including (but not limited to): 
 
-                        Algorithms and Complexity, Bioinformatics, Centralized and Distributed algorithms, Cryptography and Security, 
-                        Quantum Computing, Graph theory, Human-Computer Interaction, Modeling and Simulation, Optimization, 
-                        Virtual and Augmented Reality, Verification and Formal methods.
-                    
+                        Algorithms and Complexity, Bioinformatics, Distributed Algorithms, Cryptography and Security,
+                        Quantum Computing, Graph Theory, Human-Computer Interaction, Modeling and Simulation, Optimization,
+                        Virtual and Augmented Reality, Formal Methods and Verification
+
                     </p>
                 </div>
                 <div class="about-info-grid">
@@ -1008,16 +1030,16 @@
                         <div class="info-card">
                             <h3>Important Dates</h3>
                             <ul>
-                                <li><strong>Paper Submission Deadline:</strong> <s>September 16, 2025</s> <span style="color: #2EA248; font-weight: 600">September 21, 2025</span></li>
-                                <li><strong>Notification of Acceptance:</strong> September 30, 2025</li>
-                                <li><strong>Registration Deadline:</strong> October 02, 2025</li>
-                                <li><strong>Conference Date:</strong> October 16, 2025, at <a style="color: #333; font-weight: 600;" href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">ENS Paris-Saclay</a>, <span style="font-weight: 600;">Amphi 1Z28</span></li>
+                                <li><strong>Paper Submission Deadline:</strong> September 9, 2026</li>
+                                <li><strong>Notification of Acceptance:</strong> September 23, 2026</li>
+                                <li><strong>Registration Deadline:</strong> September 25, 2026</li>
+                                <li><strong>Conference Date:</strong> October 9, 2026, at <a style="color: #333; font-weight: 600;" href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">Université Paris-Saclay</a></li>
                             </ul>
                         </div>
 
                         <div class="info-card">
-                            <h3>Quick Download</h3>
-                            <p>Download the Call for Papers PDF for full submission guidelines and topics.</p>
+                            <h3>Call for Papers</h3>
+                            <p>Download the call for papers PDF for more details on submission guidelines and topics.</p>
                             <div style="height: 10px;"></div>
                             <a href="files/cfp.pdf" target="_blank" class="cta-button" download>Download CFP</a>
                         </div>
@@ -1026,7 +1048,8 @@
         </div>
     </section>
 
-    <!-- Keynotes Section -->
+    <!-- Keynotes Section (commented out until speakers are confirmed) -->
+    <!--
     <section id="speakers" class="section">
         <div class="container">
             <div class="section-header">
@@ -1034,22 +1057,23 @@
             </div>
             <div class="program-grid">
                 <div class="program-card">
-                    <!-- <div class="program-time">Day 1 - 9:00 AM</div> -->
-                    <div class="program-title">Combinatorial Optimization in real-world production systems Supply Chain Management</div>
-                    <div class="program-speaker">Prof. Chengbin CHU</div>
-                    <div class="program-speaker">Professor, Gustave Eiffel University</div>
-                    <div class="program-description">This talk covers supply chain management fundamentals through combinatorial optimization techniques and current research topics. The focus is on real-world applications across diverse sectors, from multinational corporations to small-and-medium enterprises, demonstrating practical implementation of research findings.</div>
+                    <!- - Keynote 1: fill in program-title, program-speaker (name), program-speaker (affiliation), program-description - ->
+                    <div class="program-title">TBD</div>
+                    <div class="program-speaker">TBD</div>
+                    <!- - <div class="program-speaker">Affiliation</div> - ->
+                    <!- - <div class="program-description">Abstract</div> - ->
                 </div>
                 <div class="program-card">
-                    <!-- <div class="program-time">Day 1 - 11:00 AM</div> -->
-                    <div class="program-title">Algorithms for #SAT: A survey presenting different ways of counting the models of a CNF formula</div>
-                    <div class="program-speaker">Prof. Florent Capelli</div>
-                    <div class="program-speaker">Junior Professor, Université d'Artois</div>
-                    <div class="program-description">A comprehensive survey of different approaches to counting models of CNF formulas (the standard input of SAT solvers) and how their computational complexity relates to the graph structure of the input CNF.</div>
+                    <!- - Keynote 2: fill in program-title, program-speaker (name), program-speaker (affiliation), program-description - ->
+                    <div class="program-title">TBD</div>
+                    <div class="program-speaker">TBD</div>
+                    <!- - <div class="program-speaker">Affiliation</div> - ->
+                    <!- - <div class="program-description">Abstract</div> - ->
                 </div>
             </div>
         </div>
     </section>
+    -->
 
     <!-- Program Section -->
     <section id="program" class="section">
@@ -1058,7 +1082,7 @@
             <div class="jita-conference">
             <div class="jita-header" id="program">
                 <h1>Conference Program</h1>
-                <div class="jita-date">On October 16, 2025, at <a style="color: #FFF; font-weight: 600;" href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">ENS Paris-Saclay</a>, in <span style="font-weight: 600;">Amphitheater 1Z28</span></div>
+                <div class="jita-date">On October 9, 2026, at <a style="color: #FFF; font-weight: 600;" href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">Université Paris-Saclay</a></div>
             </div>
             
             <div class="jita-content">
@@ -1077,7 +1101,7 @@
                             <tr>
                                 <td class="jita-time">9:15 - 10:15</td>
                                 <td class="jita-activity">
-                                    <span class="jita-keynote">Keynote 1 - Prof. Florent Capelli</span>
+                                    <span class="jita-keynote">Keynote 1 — TBD</span>
                                 </td>
                             </tr>
                             <tr>
@@ -1089,25 +1113,14 @@
                                 <td class="jita-activity">
                                     <div>Oral Session 1</div>
                                     <div class="jita-papers-list">
+                                        <!-- Add papers here: copy a jita-paper-item block per paper -->
+                                        <!-- <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Title</div>
+                                            <div class="jita-paper-authors">Authors</div>
+                                        </div> -->
                                         <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 27</div> -->
-                                            <div class="jita-paper-title">Weighted and Non-Uniform Crossing Neighborhood in Sandpiles</div>
-                                            <div class="jita-paper-authors">Antonin Loubière, Pablo Concha-Vega, Kévin Perrot</div>
-                                        </div>
-                                        <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 32</div> -->
-                                            <div class="jita-paper-title">PTOTL: Probabilistic Timed Obstruction Temporal Logic for Cost-Bounded Sabotage in Real-Time Systems</div>
-                                            <div class="jita-paper-authors">Axel OSCAR</div>
-                                        </div>
-                                        <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 34</div> -->
-                                            <div class="jita-paper-title">Richer Oracle Interactions in Constraint Acquisition: Theory and Application to Program Verification</div>
-                                            <div class="jita-paper-authors">Sarra Djebour</div>
-                                        </div>
-                                        <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 26</div> -->
-                                            <div class="jita-paper-title">Toward Practical Constraint Acquisition: An Anytime Learning Approach</div>
-                                            <div class="jita-paper-authors">Aicha Boukhari</div>
+                                            <div class="jita-paper-title">TBD</div>
+                                            <div class="jita-paper-authors">TBD</div>
                                         </div>
                                     </div>
                                 </td>
@@ -1119,7 +1132,7 @@
                             <tr>
                                 <td class="jita-time">13:30 - 14:30</td>
                                 <td class="jita-activity">
-                                    <span class="jita-keynote">Keynote 2 - Prof. Chengbin CHU</span>
+                                    <span class="jita-keynote">Keynote 2 — TBD</span>
                                 </td>
                             </tr>
                             <tr>
@@ -1127,25 +1140,14 @@
                                 <td class="jita-activity">
                                     <div>Oral Session 2</div>
                                     <div class="jita-papers-list">
+                                        <!-- Add papers here: copy a jita-paper-item block per paper -->
+                                        <!-- <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Title</div>
+                                            <div class="jita-paper-authors">Authors</div>
+                                        </div> -->
                                         <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 28</div> -->
-                                            <div class="jita-paper-title">Comparing the classes of Nash equilibria obtained by players using different types of quantum resources</div>
-                                            <div class="jita-paper-authors">Igor Semezies, Alastair Abbott, Mehdi Mhalla</div>
-                                        </div>
-                                        <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 20</div> -->
-                                            <div class="jita-paper-title">Neural Field Turing Machine: A Differentiable Spatial Computer</div>
-                                            <div class="jita-paper-authors">Akash Malhotra, Nacera Seghouani</div>
-                                        </div>
-                                        <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 35</div> -->
-                                            <div class="jita-paper-title">Mind Games Machines Play: Contrastive Cognitive Bias Detection in LLMs and Distilled Models</div>
-                                            <div class="jita-paper-authors">Anusha Asim, Maryam Rifah</div>
-                                        </div>
-                                        <div class="jita-paper-item">
-                                            <!-- <div class="jita-paper-number">Paper 25</div> -->
-                                            <div class="jita-paper-title">Symbolic Critics to Mitigate General-Purpose AI Hallucinations in Robotic Scene Interpretation</div>
-                                            <div class="jita-paper-authors">Damien Alouges, Raphaël Lallement, Matteo Morelli, Sébastien Gérard</div>
+                                            <div class="jita-paper-title">TBD</div>
+                                            <div class="jita-paper-authors">TBD</div>
                                         </div>
                                     </div>
                                 </td>
@@ -1162,59 +1164,15 @@
                     </table>
                 </div>
             </div>
-            <!-- <div class="program-grid">
-                <div class="program-card">
-                    <div class="program-time">Day 1 - 9:00 AM</div>
-                    <div class="program-title">Opening Keynote</div>
-                    <div class="program-speaker">Dr. Sarah Johnson</div>
-                    <div class="program-description">Kick off the conference with an inspiring keynote about the future of artificial intelligence and its impact on society.</div>
-                </div>
-                <div class="program-card">
-                    <div class="program-time">Day 1 - 11:00 AM</div>
-                    <div class="program-title">AI & Machine Learning Workshop</div>
-                    <div class="program-speaker">Prof. Michael Chen</div>
-                    <div class="program-description">Hands-on workshop covering the latest advances in machine learning algorithms and practical applications.</div>
-                </div>
-                <div class="program-card">
-                    <div class="program-time">Day 2 - 10:00 AM</div>
-                    <div class="program-title">Cloud Computing Summit</div>
-                    <div class="program-speaker">Lisa Rodriguez</div>
-                    <div class="program-description">Deep dive into cloud architecture, scalability patterns, and modern deployment strategies.</div>
-                </div>
-                <div class="program-card">
-                    <div class="program-time">Day 2 - 2:00 PM</div>
-                    <div class="program-title">Cybersecurity Panel</div>
-                    <div class="program-speaker">Security Experts Panel</div>
-                    <div class="program-description">Industry experts discuss current threats, defense strategies, and the future of cybersecurity.</div>
-                </div>
-                <div class="program-card">
-                    <div class="program-time">Day 3 - 9:30 AM</div>
-                    <div class="program-title">Startup Pitch Competition</div>
-                    <div class="program-speaker">Various Entrepreneurs</div>
-                    <div class="program-description">Exciting competition featuring innovative startups presenting their groundbreaking solutions.</div>
-                </div>
-                <div class="program-card">
-                    <div class="program-time">Day 3 - 4:00 PM</div>
-                    <div class="program-title">Closing Ceremony</div>
-                    <div class="program-speaker">Conference Organizers</div>
-                    <div class="program-description">Wrap up the conference with awards, recognition, and a look ahead to next year's event.</div>
-                </div>
-            </div> -->
         </div>
     </section>
 
     <!-- Submission Section -->
-
     <section id="submission" class="section registration">
         <div class="container">
             <div class="section-header">
                 <h2>Paper Submission</h2>
                 <p>All submissions must be in English and submitted in PDF format. The extended abstracts, which can be up to 3 pages long, should include an abstract, a list of keywords, and references.</p>
-            </div>
-
-            <div class="extension-notice">
-                <h3>🎉 Deadline Extended!</h3>
-                <p>The submission deadline has been extended by one week to <strong>September 21, 2025</strong></p>
             </div>
 
             <div class="submission-table">
@@ -1228,101 +1186,85 @@
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">🔗 Submission Link:</div>
-                    <div class="submission-value"><a href="https://openreview.net/group?id=JITA/2025/Conference" target="_blank">OpenReview – JITA 2025</a></div>
+                    <div class="submission-value"><a href="#" target="_blank">OpenReview – JITA 2026</a></div>
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">⏳ Submission Deadline:</div>
-                    <div class="submission-value" style="color: #333;"><strong><s>September 16, 2025</s> September 21, 2025</strong></div>
+                    <div class="submission-value" style="color: #333;"><strong>September 9, 2026</strong></div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Speakers Section -->
     <section id="speakers" class="section">
         <div class="container">
             <div class="section-header">
                 <h2>Organizing Committee</h2>
-                <p>Meet the teams behind the success of JITA 2025</p>
+                <p>Meet the teams behind the success of JITA 2026</p>
             </div>
             <!-- Junior Committee -->
-            <h3 style="margin-bottom: 1rem; color: #2EA248;">Junior Committee</h3>
+            <h3 class="committee-title">Junior Committee</h3>
             <div class="speakers-grid">
-                
                 <div class="speaker-card">
-                    <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/borhan.jpg" alt="Borhaneddine Hamadou" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                    </div>
-                    <div class="speaker-name">Borhaneddine Hamadou</div>
-                    <div class="speaker-title">PhD Student, CEA-List</div>
-                    <div class="speaker-bio">-</div>
-                </div> 
-                <div class="speaker-card">
-                    <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/Photo_noe.jpg" alt="Noé Demange" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                    </div>
-                    <div class="speaker-name">Noé Demange</div>
-                    <div class="speaker-title">PhD Student, Université de Versailles Paris-Saclay</div>
-                    <div class="speaker-bio">-</div>
+                    <div class="speaker-avatar">XB</div>
+                    <div class="speaker-name">Xiaoyuan Bai</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
-                    <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/Photo_Yueyu DING.png" alt="Yueyu Ding" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                    </div>
-                    <div class="speaker-name">Yueyu Ding</div>
-                    <div class="speaker-title">PhD Student, Université Paris-Saclay</div>
-                    <div class="speaker-bio">-</div>
+                    <div class="speaker-avatar">CG</div>
+                    <div class="speaker-name">Chloé Godet</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
-                    <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/Photo_Rémi.png" alt="Rémi PALLEN" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                    </div>
-                    <div class="speaker-name">Rémi PALLEN</div>
-                    <div class="speaker-title">PhD Student, Université Paris-Saclay</div>
-                    <div class="speaker-bio">-</div>
+                    <div class="speaker-avatar">EK</div>
+                    <div class="speaker-name">Eirini Karoulla</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-avatar">SN</div>
+                    <div class="speaker-name">Sheeja-Rani Sathyanesan Nadar</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-avatar">PH</div>
+                    <div class="speaker-name">Pau De Las Heras Molins</div>
+                    <div class="speaker-title">Institut Polytechnique de Paris</div>
                 </div>
             </div>
 
             <!-- Senior Committee -->
-            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #2EA248;">Senior Committee</h3>
+            <h3 class="committee-title">Senior Committee</h3>
             <div class="speakers-grid">
                 <div class="speaker-card">
-                    <div class="speaker-avatar">MR</div>
-                    <div class="speaker-name">Melek Rodoplu</div>
-                    <div class="speaker-title">Université d'Evry-Paris Saclay</div>
-                    <div class="speaker-bio">-</div>
+                    <div class="speaker-avatar">MA</div>
+                    <div class="speaker-name">Mathilde Arnaud</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
-                    <div class="speaker-avatar">MC</div>
-                    <div class="speaker-name">Michel Kieffer</div>
-                    <div class="speaker-title">Université Paris-Saclay</div>
-                    <div class="speaker-bio">-</div>
+                    <div class="speaker-avatar">GB</div>
+                    <div class="speaker-name">Georgios Bakirtzis</div>
+                    <div class="speaker-title">Institut Polytechnique de Paris</div>
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">VC</div>
                     <div class="speaker-name">Vincent Chau</div>
                     <div class="speaker-title">Université Paris-Saclay</div>
-                    <div class="speaker-bio">-</div>
                 </div>
                 <div class="speaker-card">
-                    <div class="speaker-avatar">HL</div>
-                    <div class="speaker-name">Hoang La</div>
+                    <div class="speaker-avatar">PC</div>
+                    <div class="speaker-name">Pierre Coucheney</div>
                     <div class="speaker-title">Université Paris-Saclay</div>
-                    <div class="speaker-bio">-</div>
                 </div>
                 <div class="speaker-card">
-                    <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/VM_photo.jpg" alt="Vadim Malvone" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                    </div>
-                    <div class="speaker-name">Vadim Malvone</div>
-                    <div class="speaker-title">Télécom Paris, Institut Polytechnique de Paris</div>
-                    <div class="speaker-bio">-</div>
+                    <div class="speaker-avatar">JS</div>
+                    <div class="speaker-name">Julien Signoles</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
             </div>
 
             <!-- Local Arrangement -->
-            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #2EA248;">Local Arrangement</h3>
+            <h3 class="committee-title">Local Arrangement</h3>
             <div class="speakers-grid">
                 <div class="speaker-card">
                     <div class="speaker-avatar" style="background: none; padding: 0;">
@@ -1330,7 +1272,6 @@
                     </div>
                     <div class="speaker-name">Marie Laveau</div>
                     <div class="speaker-title">Université Paris Saclay</div>
-                    <div class="speaker-bio">-</div>
                 </div> 
             </div>
         </div>
@@ -1344,45 +1285,12 @@
         <h2>Registration</h2>
         <p>
             Registration is free but mandatory and can be done online 
-            <a style="color: #FFF; font-weight: 700;" href="https://admin-sphinx.universite-paris-saclay.fr/v4/s/zsnhnu" target="_blank">here</a>.
+            <a style="color: #FFF; font-weight: 700;" href="#" target="_blank">here</a>.
         </p>
         <!-- <p>According to the conference policy, AT LEAST ONE author of each accepted paper MUST register.</p> -->
         </div>
     </div>
     </section>
-
-    <!-- Venue Section -->
-    <!-- <section id="venue" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Venue</h2>
-                <p>Join us in the heart of San Francisco's tech district</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Moscone Center</h3>
-                    <p><strong>Address:</strong> 747 Howard St, San Francisco, CA 94103</p>
-                    
-                    <p>The Moscone Center is San Francisco's premier convention facility, located in the heart of the city's South of Market district. With state-of-the-art facilities and easy access to public transportation, it's the perfect venue for CONF2025.</p>
-                    
-                    <h4>Getting There:</h4>
-                    <p>• <strong>By Air:</strong> San Francisco International Airport (SFO) - 30 minutes by BART</p>
-                    <p>• <strong>By Train:</strong> Multiple BART and Muni lines serve the area</p>
-                    <p>• <strong>By Car:</strong> Valet parking available on-site</p>
-                    
-                    <h4>Nearby Hotels:</h4>
-                    <p>We've arranged special rates at partner hotels within walking distance of the venue. Check your registration email for booking codes.</p>
-                </div>
-                <div style="background: #f0f0f0; border-radius: 15px; height: 400px; display: flex; align-items: center; justify-content: center; color: #666;">
-                    <div style="text-align: center;">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
-                        <div>Interactive Map</div>
-                        <div style="font-size: 0.9rem; margin-top: 0.5rem;">Moscone Center, San Francisco</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -1390,9 +1298,25 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact Information</h3>
-                    <p>Email: <a href="mailto:jita.conf.2025@gmail.com">jita.conf.2025@gmail.com</a></p>
+                    <p>Email: <a href="mailto:jita.conf.2026@gmail.com">jita.conf.2026@gmail.com</a></p>
                     <!-- <p>Phone: +1 (555) 123-4567</p> -->
-                    <p>Address: Plateau de Saclay, France</p>
+                    <p>Address: <a href="https://maps.app.goo.gl/SDQaC9o6H2SjCDtX9" target="_blank">Plateau de Saclay, France</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Junior Committee</h3>
+                    <p><a href="#">Xiaoyuan Bai (Université Paris-Saclay)</a></p>
+                    <p><a href="#">Pau De Las Heras Molins (Institut Polytechnique de Paris)</a></p>
+                    <p><a href="#">Chloé Godet (Université Paris-Saclay)</a></p>
+                    <p><a href="#">Eirini Karoulla (Université Paris-Saclay)</a></p>
+                    <p><a href="#">Sheeja-Rani Sathyanesan Nadar (Université Paris-Saclay)</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Senior Committee</h3>
+                    <p><a href="#">Mathilde Arnaud (Université Paris-Saclay)</a></p>
+                    <p><a href="#">Georgios Bakirtzis (Institut Polytechnique de Paris)</a></p>
+                    <p><a href="#">Vincent Chau (Université Paris-Saclay)</a></p>
+                    <p><a href="#">Pierre Coucheney (Université Paris-Saclay)</a></p>
+                    <p><a href="#">Julien Signoles (Université Paris-Saclay)</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -1400,24 +1324,10 @@
                     <p><a href="#program">Program</a></p>
                     <p><a href="#speakers">Organizers</a></p>
                     <p><a href="#registration">Registration</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Junior Committee</h3>
-                    <p><a href="#">Borhaneddine Hamadou (CEA-List)</a></p>
-                    <p><a href="#">Noé Demange (Université de Versailles Paris-Saclay)</a></p>
-                    <p><a href="#">Yueyu Ding (Université Paris-Saclay)</a></p>
-                    <p><a href="#">Rémi Pallen (Université Paris-Saclay)</a></p> 
-                </div>
-                <div class="footer-section">
-                    <h3>Senior Committee</h3>
-                    <p><a href="#">Melek Rodoplu (Université d'Evry-Paris Saclay)</a></p>
-                    <p><a href="#">Michel Kieffer (Université Paris-Saclay)</a></p>
-                    <p><a href="#">Vincent Chau (Université Paris-Saclay)</a></p>
-                    <p><a href="#">Hoang La (Université Paris-Saclay)</a></p>
-                </div>
+                </div>                
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 JITA 2025. All rights reserved.</p>
+                <p>&copy; 2026 JITA 2026. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1479,7 +1389,6 @@
             });
         });
     </script>
-
 
 </body>
 </html>
