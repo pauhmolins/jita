@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JITA 2025 - JITA</title>
+    <link rel="icon" href="img/icon_new.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            color: white;
+            padding: 1rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><polygon fill="rgba(255,255,255,0.1)" points="0,200 1000,0 1000,200"/></svg>') no-repeat;
+            background-size: cover;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: white;
+            padding: 1rem;
+            background: #096B68;
+            text-align: center;
+        }
+
+        .submission-table {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .submission-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .submission-row:last-child {
+            border-bottom: none;
+        }
+
+        .submission-label {
+            font-weight: 600;
+            color: #096B68;
+            width: 220px;
+            min-width: 200px;
+        }
+
+        .submission-value a {
+            color: #007BBA;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .submission-value a:hover {
+            text-decoration: underline;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-text h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .event-details {
+            text-align: right;
+        }
+
+        .event-date {
+            font-size: 1.2rem;
+            font-weight: 600;
+            /* color: #ffd700; */
+            color: #333;
+        }
+
+        .event-location {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .nav {
+            /* background: rgba(0, 0, 0, 0.9); */
+            background: #033A66;
+            background: #096B68;
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0;
+        }
+
+        .nav-menu li {
+            flex: 1;
+        }
+
+        .nav-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-bottom-color: #096B68;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            /* background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%); */
+            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="rgba(255,255,255,.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><rect width="100" height="20" fill="url(%23a)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #096B68;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Program Section */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .program-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #096B68;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .program-time {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #096B68;
+            margin-bottom: 1rem;
+        }
+
+        .program-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .program-speaker {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .program-description {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Speakers Section */
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .speaker-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .speaker-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .speaker-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .speaker-title {
+            font-size: 1rem;
+            color: #096B68;
+            margin-bottom: 1rem;
+        }
+
+        .speaker-bio {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Registration Section */
+        .registration {
+            background: linear-gradient(135deg, #096B68 0%, #90D1CA 100%) !important;
+            color: white;
+        }
+
+        .registration .section-header h2,
+        .registration .section-header p {
+            color: white;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid #ffd700;
+            transform: scale(1.05);
+        }
+
+        .pricing-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #ffd700;
+        }
+
+        .pricing-period {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-button {
+            background: #ffd700;
+            color: #333;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .pricing-button:hover {
+            background: #ffed4e;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+
+        .footer-section a:hover {
+            color: #ffd700;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 1rem;
+            text-align: center;
+            color: #95a5a6;
+        }
+
+        .about-info-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-card h3 {
+            margin-bottom: 1rem;
+            color: #096B68;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-card ul li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .topics-card {
+            background: #f4f6f8;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .topics-card h3 {
+            margin-bottom: 1rem;
+            color: #096B68;
+        }
+
+        .topics-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-content{
+                padding: 0 0;
+            }
+
+            .header-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+            }
+
+            .nav-menu a {
+                padding: 0.8rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+
+            .event-date {
+                font-size: 0.9rem !important;
+            }
+
+            .event-location {
+                font-size: 0.7rem !important;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background: #033A66;
+                background: #096B68;
+                overflow: hidden;
+            }
+
+            .nav-menu.active {
+                display: unset;
+                max-height: 0px;
+            }
+
+            .nav-menu li {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" style="background: white;">
+        <div class="header-content" style="grid-template-columns: auto auto; justify-content: space-between;">
+            <div class="logo" style="gap: 0;">
+                <img src="img/logo_new.png" alt="Conference Logo" style="height: 65px; width: auto;">
+            </div>
+            <div class="event-details" style="text-align: right; color: #096B68;">
+                <div class="event-date">October 16, 2025</div>
+                <div class="event-location">Plateau de Saclay, France</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-toggle" id="navToggle">☰ Menu</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#submission">Submission</a></li>
+                <li><a href="#speakers">Organizers</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <!-- <li><a href="#venue">Venue</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to JITA 2025</h1>
+            <p>
+                Join us for the most innovative junior conference JITA, where Masters and PhD students 
+                showcase groundbreaking research and ignite collaborations in Computer Science !</p>
+            <a href="#submission" class="cta-button">Submit Your Paper Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About JITA 2025</h2>
+                <p>The Junior conference on Theoretical and Applied Computer Science </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p> JITA 2025 is the 2nd edition of the junior conference on Theoretical and Applied Computer Science, a multidisciplinary 
+                        conference that allows Masters and PhD students in various fields of Theoretical and Applied Computer Science to present 
+                        their research results. Take the opportunity to share your research with colleagues, all the while honing your presentation 
+                        skills, receiving feedback, and broadening your knowledge of Computer Science. Any Masters or first/second-year PhD Student 
+                        is welcome to present either their current research or ongoing works with preliminary results.
+                    </p>
+                    
+                    <p></p>
+                    <div style="height: 20px;"></div>
+                    <h3 style="color: #096B68;">Topics of Interest</h3>
+                    <p>Submissions are encouraged in areas including (but not limited to): 
+
+                        Algorithms and Complexity, Bioinformatics, Centralized and Distributed algorithms, Cryptography and Security, 
+                        Quantum Computing, Graph theory, Human-Computer Interaction, Modeling and Simulation, Optimization, 
+                        Virtual and Augmented Reality, Verification and Formal methods.
+                    
+                    </p>
+                </div>
+                <div class="about-info-grid">
+                    <div class="about-info-column">
+                        <div class="info-card">
+                            <h3>Important Dates</h3>
+                            <ul>
+                                <li><strong>Paper Submission Deadline:</strong> September 16, 2025</li>
+                                <li><strong>Notification of Acceptance:</strong> September 30, 2025</li>
+                                <li><strong>Registration Deadline:</strong> October 02, 2025</li>
+                                <li><strong>Conference Date:</strong> October 16, 2025</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Quick Download</h3>
+                            <p>Download the Call for Papers PDF for full submission guidelines and topics.</p>
+                            <div style="height: 10px;"></div>
+                            <a href="files/cfp.pdf" target="_blank" class="cta-button" download>Download CFP</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conference Program</h2>
+                <p>Explore our comprehensive schedule of sessions, workshops, and networking events</p>
+            </div>
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="program-time">Day 1 - 9:00 AM</div>
+                    <div class="program-title">Opening Keynote</div>
+                    <div class="program-speaker">Dr. Sarah Johnson</div>
+                    <div class="program-description">Kick off the conference with an inspiring keynote about the future of artificial intelligence and its impact on society.</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-time">Day 1 - 11:00 AM</div>
+                    <div class="program-title">AI & Machine Learning Workshop</div>
+                    <div class="program-speaker">Prof. Michael Chen</div>
+                    <div class="program-description">Hands-on workshop covering the latest advances in machine learning algorithms and practical applications.</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-time">Day 2 - 10:00 AM</div>
+                    <div class="program-title">Cloud Computing Summit</div>
+                    <div class="program-speaker">Lisa Rodriguez</div>
+                    <div class="program-description">Deep dive into cloud architecture, scalability patterns, and modern deployment strategies.</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-time">Day 2 - 2:00 PM</div>
+                    <div class="program-title">Cybersecurity Panel</div>
+                    <div class="program-speaker">Security Experts Panel</div>
+                    <div class="program-description">Industry experts discuss current threats, defense strategies, and the future of cybersecurity.</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-time">Day 3 - 9:30 AM</div>
+                    <div class="program-title">Startup Pitch Competition</div>
+                    <div class="program-speaker">Various Entrepreneurs</div>
+                    <div class="program-description">Exciting competition featuring innovative startups presenting their groundbreaking solutions.</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-time">Day 3 - 4:00 PM</div>
+                    <div class="program-title">Closing Ceremony</div>
+                    <div class="program-speaker">Conference Organizers</div>
+                    <div class="program-description">Wrap up the conference with awards, recognition, and a look ahead to next year's event.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Section -->
+
+    <section id="submission" class="section registration">
+        <div class="container">
+            <div class="section-header">
+                <h2>Paper Submission</h2>
+                <p>All submissions must be in English and submitted in PDF format. The extended abstracts, which can be up to 3 pages long, should include an abstract, a list of keywords, and references.</p>
+            </div>
+
+            <div class="submission-table">
+                <div class="submission-row">
+                    <div class="submission-label">📄 Paper Template:</div>
+                    <div class="submission-value"><a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">Springer LNCS Guidelines</a></div>
+                </div>
+                <div class="submission-row">
+                    <div class="submission-label">📝 Submission Example:</div>
+                    <div class="submission-value"><a href="https://jdse-paris.github.io/jDSE2019/assets/JDSEtemplate.pdf" target="_blank">Download Example PDF</a></div>
+                </div>
+                <div class="submission-row">
+                    <div class="submission-label">🔗 Submission Link:</div>
+                    <div class="submission-value"><a href="https://openreview.net/group?id=JDSE/2024/Conference" target="_blank">OpenReview – JITA 2025</a></div>
+                </div>
+                <div class="submission-row">
+                    <div class="submission-label">⏳ Submission Deadline:</div>
+                    <div class="submission-value" style="color: #333;"><strong>September 16, 2025</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Organizing Committee</h2>
+                <p>Meet the teams behind the success of JITA 2025</p>
+            </div>
+            <!-- Junior Committee -->
+            <h3 style="margin-bottom: 1rem; color: #096B68;">Junior Committee</h3>
+            <div class="speakers-grid">
+                
+                <div class="speaker-card">
+                    <div class="speaker-avatar" style="background: none; padding: 0;">
+                        <img src="img/borhan.jpg" alt="Borhaneddine Hamadou" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="speaker-name">Borhaneddine Hamadou</div>
+                    <div class="speaker-title">PhD Student, CEA-List</div>
+                    <div class="speaker-bio">-</div>
+                </div> 
+                <div class="speaker-card">
+                    <div class="speaker-avatar" style="background: none; padding: 0;">
+                        <img src="img/Photo_noe.jpg" alt="Noé Demange" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="speaker-name">Noé Demange</div>
+                    <div class="speaker-title">PhD Student, Université de Versailles Paris-Saclay</div>
+                    <div class="speaker-bio">-</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-avatar">YD</div>
+                    <div class="speaker-name">Yueyu Ding</div>
+                    <div class="speaker-title">PhD Student, Université Paris-Saclay</div>
+                    <div class="speaker-bio">-</div>
+                </div>
+            </div>
+
+            <!-- Senior Committee -->
+            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #096B68;">Senior Committee</h3>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-avatar">MR</div>
+                    <div class="speaker-name">Melek Rodoplu</div>
+                    <div class="speaker-title">Université d'Evry-Paris Saclay</div>
+                    <div class="speaker-bio">-</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-avatar">MC</div>
+                    <div class="speaker-name">Michel Kieffer</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
+                    <div class="speaker-bio">-</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-avatar">VC</div>
+                    <div class="speaker-name">Vincent Chau</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
+                    <div class="speaker-bio">-</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-avatar">HL</div>
+                    <div class="speaker-name">Hoang La</div>
+                    <div class="speaker-title">Université Paris-Saclay</div>
+                    <div class="speaker-bio">-</div>
+                </div>
+            </div>
+
+            <!-- Local Arrangement -->
+            <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: #096B68;">Local Arrangement</h3>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-avatar">ML</div>
+                    <div class="speaker-name">Marie Laveau</div>
+                    <div class="speaker-title">Université d'Evry-Paris Saclay</div>
+                    <div class="speaker-bio">-</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Registration Section -->
+    <section id="registration" class="section registration">
+        <div class="container">
+            <div class="section-header">
+                <h2>Registration</h2>
+                <p>Registration is free but mandatory and can be done online <a href="https://forms.gle/your-google-form-link" target="_blank">here</a>.</p>
+                <p>According to the conference policy, AT LEAST ONE author of each accepted paper MUST register.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <!-- <section id="venue" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Venue</h2>
+                <p>Join us in the heart of San Francisco's tech district</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Moscone Center</h3>
+                    <p><strong>Address:</strong> 747 Howard St, San Francisco, CA 94103</p>
+                    
+                    <p>The Moscone Center is San Francisco's premier convention facility, located in the heart of the city's South of Market district. With state-of-the-art facilities and easy access to public transportation, it's the perfect venue for CONF2025.</p>
+                    
+                    <h4>Getting There:</h4>
+                    <p>• <strong>By Air:</strong> San Francisco International Airport (SFO) - 30 minutes by BART</p>
+                    <p>• <strong>By Train:</strong> Multiple BART and Muni lines serve the area</p>
+                    <p>• <strong>By Car:</strong> Valet parking available on-site</p>
+                    
+                    <h4>Nearby Hotels:</h4>
+                    <p>We've arranged special rates at partner hotels within walking distance of the venue. Check your registration email for booking codes.</p>
+                </div>
+                <div style="background: #f0f0f0; border-radius: 15px; height: 400px; display: flex; align-items: center; justify-content: center; color: #666;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
+                        <div>Interactive Map</div>
+                        <div style="font-size: 0.9rem; margin-top: 0.5rem;">Moscone Center, San Francisco</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>Email: <a href="mailto:jita.conf@gmail.com">jita.conf@gmail.com</a></p>
+                    <!-- <p>Phone: +1 (555) 123-4567</p> -->
+                    <p>Address: Telecom Paris, France</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#about">About</a></p>
+                    <p><a href="#program">Program</a></p>
+                    <p><a href="#speakers">Organizers</a></p>
+                    <p><a href="#registration">Registration</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Junior Committee</h3>
+                    <p><a href="#">Borhaneddine Hamadou (CEA-List)</a></p>
+                    <p><a href="#">Noé Demange (-)</a></p>
+                    <p><a href="#">Yueyu Ding (Université Paris-Saclay)</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Senior Committee</h3>
+                    <p><a href="#">Melek Rodoplu (Université d'Evry-Paris Saclay)</a></p>
+                    <p><a href="#">Michel Kieffer (Université Paris-Saclay)</a></p>
+                    <p><a href="#">Vincent Chau (-)</a></p>
+                    <p><a href="#">Hoang La (Université Paris-Saclay)</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JITA 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Highlight active navigation item based on scroll position
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-menu a");
+
+            window.addEventListener("scroll", () => {
+                let current = "";
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (pageYOffset >= sectionTop) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === "#" + current) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+
+            // Mobile nav toggle
+            const navToggle = document.getElementById('navToggle');
+            const navMenu = document.getElementById('navMenu');
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('navMenu');
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>
