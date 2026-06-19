@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JITA</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f7f9f8'/><text x='50' y='75' text-anchor='middle' font-size='72' font-weight='bold' font-family='Segoe UI,serif' fill='%231a1a1a'>J</text></svg>" type="image/svg+xml">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -21,18 +22,22 @@
 
         header {
             text-align: center;
-            margin-bottom: 3.5rem;
+            margin-top: -0.2rem;
         }
 
         header h1 {
             font-size: 3rem;
             font-weight: 700;
             color: #1a1a1a;
-            letter-spacing: -0.5px;
+            line-height: 1;
+        }
+
+        header h2 {
+            margin-top: 1rem;
         }
 
         header p {
-            margin-top: 3rem;
+            margin-top: 2rem;
             max-width: 680px;
             margin-left: auto;
             margin-right: auto;
@@ -46,6 +51,7 @@
             gap: 1.25rem;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 2rem;
         }
 
         .edition-card {
@@ -86,8 +92,24 @@
 </head>
 <body>
     <header>
-        <h1>JITA</h1><br>
+        <h1>JITA</h1>
         <h2>Junior Conference on Informatics: Theory and Applications</h2>
+
+        <div class="editions">
+            <!-- Adjust as needed -->
+            <!-- <a href="jita2025" class="edition-card y2025"> -->
+            <a href="jita2025/index.html" class="edition-card y2025">
+            <div class="year">JITA 2025</div>
+                <div class="label">Previous edition</div>
+            </a>
+            <!-- Adjust as needed -->
+            <!-- <a href="jita2026" class="edition-card y2026"> -->
+            <a href="jita2026/index.html" class="edition-card y2026">
+            <div class="year">JITA 2026</div>
+                <div class="label">Current edition</div>
+            </a>
+        </div>
+
         <p>
             The <strong>Junior Conference on Informatics: Theory and Applications (JITA)</strong>
             is a great opportunity for master students and young researchers
@@ -101,21 +123,19 @@
             <strong><a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener">Université Paris-Saclay (UPSaclay)</a></strong>
             and <strong><a href="https://www.ip-paris.fr" target="_blank" rel="noopener">Institut Polytechnique de Paris (IPP)</a></strong>.
         </p>
-    </header>
 
-    <div class="editions">
-        <!-- Adjust as needed -->
-        <a href="jita2025" class="edition-card y2025">
-        <!-- <a href="jita2025/index.html" class="edition-card y2025"> -->
-        <div class="year">JITA 2025</div>
-            <div class="label">Previous edition</div>
-        </a>
-        <!-- Adjust as needed -->
-        <a href="jita2026" class="edition-card y2026">
-        <!-- <a href="jita2026/index.html" class="edition-card y2026"> -->
-        <div class="year">JITA 2026</div>
-            <div class="label">Current edition</div>
-        </a>
-    </div>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 2rem;">
+            <div style="width: 200px; display: flex; justify-content: right; align-items: right;">
+                <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
+                    <img src="img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay" style="height: 50px; width: auto;">
+                </a>
+            </div>
+            <div style="width: 200px; display: flex; justify-content: center; align-items: center;">
+                <a href="https://www.ip-paris.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
+                    <img src="img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris" style="height: 50px; width: auto;">
+                </a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>

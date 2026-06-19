@@ -6,8 +6,8 @@
     <title>JITA 2025 - JITA</title>
 
     <!-- Adjust the base path as needed -->
-    <base href="/wp-content/themes/blankslate/static/jita2025/">
-    <!-- <base href="./"> -->
+    <!-- <base href="/wp-content/themes/blankslate/static/jita2025/"> -->
+    <base href="./">
 
     <link rel="icon" href="img/icon_new.png" type="image/png">
     <style>
@@ -720,9 +720,23 @@
 <body>
     <!-- Header -->
     <header class="header" style="background: white;">
-        <div class="header-content" style="grid-template-columns: auto auto; justify-content: space-between;">
+        <div class="header-content" style="grid-template-columns: 1fr auto 1fr;">
             <div class="logo" style="gap: 0;">
-                <img src="img/logo_new.png" alt="Conference Logo" style="height: 65px; width: auto;">
+                <a href="#home" style="display: flex; align-items: center;">
+                    <img src="img/logo_new.png" alt="Conference Logo" style="height: 65px; width: auto;">
+                </a>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 180px; display: flex; justify-content: right; align-items: right;">
+                    <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
+                        <img src="../img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay" style="height: 45px; width: auto;">
+                    </a>
+                </div>
+                <div style="width: 180px; display: flex; justify-content: center; align-items: center;">
+                    <a href="https://www.ip-paris.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
+                        <img src="../img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris" style="height: 45px; width: auto;">
+                    </a>
+                </div>
             </div>
             <div class="event-details" style="text-align: right; color: #096B68;">
                 <div class="event-date">October 16, 2025</div>
