@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,7 +111,7 @@
         .submission-value a:hover {
             text-decoration: underline;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
@@ -254,7 +255,7 @@
             font-size: 1.1rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(245, 204, 235, 0.3);
-            
+
         }
 
         .cta-button:hover {
@@ -590,7 +591,8 @@
             color: #fceff9;
         }
 
-        .footer-section p, .footer-section a {
+        .footer-section p,
+        .footer-section a {
             color: #bdc3c7;
             text-decoration: none;
             line-height: 1.8;
@@ -658,7 +660,7 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-content{
+            .nav-content {
                 padding: 0 0;
             }
 
@@ -668,7 +670,7 @@
                 gap: 1rem;
             }
 
-            .header-content > div:nth-child(2) {
+            .header-content>div:nth-child(2) {
                 grid-row: 2;
                 grid-column: 1 / -1;
                 justify-content: center;
@@ -756,6 +758,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -797,193 +800,194 @@
         }
 
 
-    .jita-conference {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
-        border-radius: 20px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        max-width: 900px;
-        width: 100%;
-        overflow: hidden;
-        margin: 20px auto;
-    }
+        .jita-conference {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+            margin: 20px auto;
+        }
 
-    .jita-conference * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+        .jita-conference * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .jita-header {
-        background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
-        color: white;
-        padding: 40px 30px;
-        text-align: center;
-    }
+        .jita-header {
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
 
-    .jita-header h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        font-weight: 700;
-    }
-
-    .jita-header .jita-date {
-        font-size: 1.3em;
-        opacity: 0.95;
-        font-weight: 300;
-    }
-
-    .jita-content {
-        background: rgba(255, 255, 255, 0.95);
-        padding: 40px 30px;
-    }
-
-    .jita-program-table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0;
-        margin-top: 20px;
-    }
-
-    .jita-program-table thead {
-        background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
-        color: white;
-    }
-
-    .jita-program-table th {
-        padding: 18px 20px;
-        text-align: left;
-        font-weight: 600;
-        font-size: 1.1em;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .jita-program-table th:first-child {
-        border-radius: 10px 0 0 0;
-    }
-
-    .jita-program-table th:last-child {
-        border-radius: 0 10px 0 0;
-    }
-
-    .jita-program-table td {
-        padding: 20px;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .jita-program-table tr:last-child td {
-        border-bottom: none;
-    }
-
-    .jita-program-table tbody tr {
-        transition: all 0.3s ease;
-    }
-
-    .jita-program-table tbody tr:hover {
-        background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-        transform: translateX(5px);
-    }
-
-    .jita-time {
-        font-weight: 600;
-        color: #2EA248;
-        font-size: 1.05em;
-        white-space: nowrap;
-    }
-
-    .jita-activity {
-        color: #333;
-        font-size: 1.05em;
-    }
-
-    .jita-keynote {
-        font-weight: 600;
-        color: #2EA248;
-    }
-
-        .jita-papers-list {
-        margin-top: 12px;
-    }
-
-    .jita-paper-item {
-        margin-bottom: 12px;
-        padding: 12px;
-        background: linear-gradient(90deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
-        border-left: 3px solid #2EA248;
-        border-radius: 5px;
-    }
-
-    .jita-paper-item:last-child {
-        margin-bottom: 0;
-    }
-
-    .jita-paper-number {
-        font-weight: 700;
-        color: #2EA248;
-        font-size: 0.95em;
-    }
-
-    .jita-paper-title {
-        font-weight: 600;
-        color: #333;
-        margin: 4px 0;
-    }
-
-    .jita-paper-authors {
-        font-size: 0.9em;
-        color: #666;
-        font-style: italic;
-    }
-
-    .jita-break {
-        color: #666;
-        font-style: italic;
-    }
-
-    .jita-highlight {
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
-        font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
         .jita-header h1 {
-            font-size: 1.8em;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
         }
 
         .jita-header .jita-date {
-            font-size: 1.1em;
-        }
-
-        .jita-program-table th,
-        .jita-program-table td {
-            padding: 12px;
-            font-size: 0.95em;
-        }
-
-                .jita-paper-item {
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        .jita-paper-title {
-            font-size: 0.9em;
-        }
-
-        .jita-paper-authors {
-            font-size: 0.85em;
-        }
-
-        .container {
-            padding: 0 1rem;
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
         }
 
         .jita-content {
-            padding: 10px 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 30px;
         }
-    }
+
+        .jita-program-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 20px;
+        }
+
+        .jita-program-table thead {
+            background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
+            color: white;
+        }
+
+        .jita-program-table th {
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .jita-program-table th:first-child {
+            border-radius: 10px 0 0 0;
+        }
+
+        .jita-program-table th:last-child {
+            border-radius: 0 10px 0 0;
+        }
+
+        .jita-program-table td {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .jita-program-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .jita-program-table tbody tr {
+            transition: all 0.3s ease;
+        }
+
+        .jita-program-table tbody tr:hover {
+            background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            transform: translateX(5px);
+        }
+
+        .jita-time {
+            font-weight: 600;
+            color: #2EA248;
+            font-size: 1.05em;
+            white-space: nowrap;
+        }
+
+        .jita-activity {
+            color: #333;
+            font-size: 1.05em;
+        }
+
+        .jita-keynote {
+            font-weight: 600;
+            color: #2EA248;
+        }
+
+        .jita-papers-list {
+            margin-top: 12px;
+        }
+
+        .jita-paper-item {
+            margin-bottom: 12px;
+            padding: 12px;
+            background: linear-gradient(90deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
+            border-left: 3px solid #2EA248;
+            border-radius: 5px;
+        }
+
+        .jita-paper-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .jita-paper-number {
+            font-weight: 700;
+            color: #2EA248;
+            font-size: 0.95em;
+        }
+
+        .jita-paper-title {
+            font-weight: 600;
+            color: #333;
+            margin: 4px 0;
+        }
+
+        .jita-paper-authors {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .jita-break {
+            color: #666;
+            font-style: italic;
+        }
+
+        .jita-highlight {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .jita-header h1 {
+                font-size: 1.8em;
+            }
+
+            .jita-header .jita-date {
+                font-size: 1.1em;
+            }
+
+            .jita-program-table th,
+            .jita-program-table td {
+                padding: 12px;
+                font-size: 0.95em;
+            }
+
+            .jita-paper-item {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            .jita-paper-title {
+                font-size: 0.9em;
+            }
+
+            .jita-paper-authors {
+                font-size: 0.85em;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .jita-content {
+                padding: 10px 10px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header" style="background: white;">
@@ -995,13 +999,17 @@
             </div>
             <div style="display: flex; align-items: center; gap: 1rem;">
                 <div style="width: 180px; display: flex; justify-content: right; align-items: right;">
-                    <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
-                        <img src="../img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay" style="height: 45px; width: auto;">
+                    <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener"
+                        style="display: flex; align-items: center;">
+                        <img src="../img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay"
+                            style="height: 45px; width: auto;">
                     </a>
                 </div>
                 <div style="width: 180px; display: flex; justify-content: center; align-items: center;">
-                    <a href="https://www.ip-paris.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
-                        <img src="../img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris" style="height: 45px; width: auto;">
+                    <a href="https://www.ip-paris.fr" target="_blank" rel="noopener"
+                        style="display: flex; align-items: center;">
+                        <img src="../img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris"
+                            style="height: 45px; width: auto;">
                     </a>
                 </div>
             </div>
@@ -1034,7 +1042,7 @@
         <div class="hero-content">
             <h1>Welcome to JITA 2026</h1>
             <p>
-                Join us for the most innovative junior conference JITA, where Masters and PhD students 
+                Join us for the most innovative junior conference JITA, where Masters and PhD students
                 showcase groundbreaking research and ignite collaborations in Computer Science!
             </p>
             <a href="#submission" class="cta-button">Submit Your Paper Now</a>
@@ -1050,20 +1058,25 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p> JITA 2026 is the 3rd edition of the <strong>Junior conference on Informatics: Theory and Applications</strong>, a multidisciplinary 
-                        conference that allows Masters and PhD students in various fields of Theoretical and Applied Computer Science to present 
-                        their research results. Take the opportunity to share your research with colleagues, all the while honing your presentation 
-                        skills, receiving feedback, and broadening your knowledge of Computer Science. Any Masters or PhD Student 
+                    <p> JITA 2026 is the 3rd edition of the <strong>Junior conference on Informatics: Theory and
+                            Applications</strong>, a multidisciplinary
+                        conference that allows Masters and PhD students in various fields of Theoretical and Applied
+                        Computer Science to present
+                        their research results. Take the opportunity to share your research with colleagues, all the
+                        while honing your presentation
+                        skills, receiving feedback, and broadening your knowledge of Computer Science. Any Masters or
+                        PhD Student
                         is welcome to present either their current research or ongoing works with preliminary results.
                     </p>
-                    
+
                     <p></p>
                     <div style="height: 20px;"></div>
                     <h3 style="color: #2EA248;">Topics of Interest</h3>
-                    <p>Submissions are encouraged in areas including (but not limited to): 
+                    <p>Submissions are encouraged in areas including (but not limited to):
 
                         algorithms and complexity, bioinformatics, distributed algorithms, cryptography and security,
-                        quantum computing, graph theory, human-computer interaction, modeling and simulation, optimization,
+                        quantum computing, graph theory, human-computer interaction, modeling and simulation,
+                        optimization,
                         virtual and augmented reality, formal methods and verification.
 
                     </p>
@@ -1076,19 +1089,23 @@
                                 <li><strong>Paper Submission Deadline:</strong> September 9, 2026</li>
                                 <li><strong>Notification of Acceptance:</strong> September 23, 2026</li>
                                 <li><strong>Registration Deadline:</strong> September 25, 2026</li>
-                                <li><strong>Conference Date:</strong> October 9, 2026, at <a style="color: #333; font-weight: 600;" href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment 660</a></li>
+                                <li><strong>Conference Date:</strong> October 9, 2026, at <a
+                                        style="color: #333; font-weight: 600;"
+                                        href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon,
+                                        Bâtiment 660</a></li>
                             </ul>
                         </div>
 
                         <div class="info-card">
                             <h3>Call for Papers</h3>
-                            <p>Download the call for papers PDF for more details on submission guidelines and topics.</p>
+                            <p>Download the call for papers PDF for more details on submission guidelines and topics.
+                            </p>
                             <div style="height: 10px;"></div>
                             <a href="files/cfp.pdf" target="_blank" class="cta-button" download>Download CFP</a>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- Keynotes Section (commented out until speakers are confirmed) -->
@@ -1123,12 +1140,14 @@
         <div class="container">
 
             <div class="jita-conference">
-            <div class="jita-header" id="program">
-                <h1>Conference Program</h1>
-                <div class="jita-date">On October 9, 2026, at <a style="color: #FFF; font-weight: 600;" href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment 660</a></div>
-            </div>
-            
-            <div class="jita-content">
+                <div class="jita-header" id="program">
+                    <h1>Conference Program</h1>
+                    <div class="jita-date">On October 9, 2026, at <a style="color: #FFF; font-weight: 600;"
+                            href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment 660</a>
+                    </div>
+                </div>
+
+                <div class="jita-content">
                     <table class="jita-program-table">
                         <thead>
                             <tr>
@@ -1225,21 +1244,26 @@
         <div class="container">
             <div class="section-header">
                 <h2>Paper Submission</h2>
-                <p>All submissions must be in English and submitted in PDF format. The extended abstracts, which can be up to 3 pages long, should include an abstract, a list of keywords, and references.</p>
+                <p>All submissions must be in English and submitted in PDF format. The extended abstracts, which can be
+                    up to 3 pages long, should include an abstract, a list of keywords, and references.</p>
             </div>
 
             <div class="submission-table">
                 <div class="submission-row">
                     <div class="submission-label">📄 Paper Template:</div>
-                    <div class="submission-value"><a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">Springer LNCS Guidelines</a></div>
+                    <div class="submission-value"><a
+                            href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                            target="_blank">Springer LNCS Guidelines</a></div>
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">📝 Submission Example:</div>
-                    <div class="submission-value"><a href="files/JITAtemplate.pdf" target="_blank">Download Example PDF</a></div>
+                    <div class="submission-value"><a href="files/JITAtemplate.pdf" target="_blank">Download Example
+                            PDF</a></div>
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">🔗 Submission Link:</div>
-                    <div class="submission-value"><a href="https://openreview.net/group?id=JITA/2026/Conference" target="_blank">OpenReview - JITA 2026</a></div>
+                    <div class="submission-value"><a href="https://openreview.net/group?id=JITA/2026/Conference"
+                            target="_blank">OpenReview - JITA 2026</a></div>
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">⏳ Submission Deadline:</div>
@@ -1261,26 +1285,33 @@
             <div class="speakers-grid">
                 <div class="speaker-card">
                     <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/xiaoyuan-bai.png" alt="Xiaoyuan Bai" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <img src="img/xiaoyuan-bai.png" alt="Xiaoyuan Bai"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                     </div>
-                    <div class="speaker-name"><a href="https://scholar.google.com/citations?user=HSTSxooAAAAJ&hl=zh-CN&oi=sra" target="_blank">Xiaoyuan Bai</a></div>
+                    <div class="speaker-name"><a
+                            href="https://scholar.google.com/citations?user=HSTSxooAAAAJ&hl=zh-CN&oi=sra"
+                            target="_blank">Xiaoyuan Bai</a></div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/pau-de-las-heras-molins.png" alt="Pau De Las Heras Molins" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <img src="img/pau-de-las-heras-molins.png" alt="Pau De Las Heras Molins"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                     </div>
-                    <div class="speaker-name"><a href="https://paudelasheras.net/" target="_blank">Pau De Las Heras Molins</a></div>
+                    <div class="speaker-name"><a href="https://paudelasheras.net/" target="_blank">Pau De Las Heras
+                            Molins</a></div>
                     <div class="speaker-title">Institut Polytechnique de Paris</div>
-                </div>                
+                </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">CG</div>
-                    <div class="speaker-name"><a href="https://www.linkedin.com/in/chloe-godet/" target="_blank">Chloé Godet</a></div>
+                    <div class="speaker-name"><a href="https://www.linkedin.com/in/chloe-godet/" target="_blank">Chloé
+                            Godet</a></div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">EK</div>
-                    <div class="speaker-name"><a href="https://www.linkedin.com/in/eirinikaroulla/" target="_blank">Eirini Karoulla</a></div>
+                    <div class="speaker-name"><a href="https://www.linkedin.com/in/eirinikaroulla/"
+                            target="_blank">Eirini Karoulla</a></div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
@@ -1300,7 +1331,8 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">GB</div>
-                    <div class="speaker-name"><a href="https://bakirtzis.net/" target="_blank">Georgios Bakirtzis</a></div>
+                    <div class="speaker-name"><a href="https://bakirtzis.net/" target="_blank">Georgios Bakirtzis</a>
+                    </div>
                     <div class="speaker-title">Institut Polytechnique de Paris</div>
                 </div>
                 <div class="speaker-card">
@@ -1310,12 +1342,14 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">PC</div>
-                    <div class="speaker-name"><a href="https://coucheney.github.io" target="_blank">Pierre Coucheney</a></div>
+                    <div class="speaker-name"><a href="https://coucheney.github.io" target="_blank">Pierre Coucheney</a>
+                    </div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar">JS</div>
-                    <div class="speaker-name"><a href="https://julien-signoles.fr/" target="_blank">Julien Signoles</a></div>
+                    <div class="speaker-name"><a href="https://julien-signoles.fr/" target="_blank">Julien Signoles</a>
+                    </div>
                     <div class="speaker-title">Université Paris-Saclay</div>
                 </div>
             </div>
@@ -1325,30 +1359,31 @@
             <div class="speakers-grid">
                 <div class="speaker-card">
                     <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/marie-laveau.png" alt="Marie Laveau" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <img src="img/marie-laveau.png" alt="Marie Laveau"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                     </div>
                     <div class="speaker-name">Marie Laveau</div>
                     <div class="speaker-title">Université Paris Saclay</div>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Registration Section -->
     <section id="registration" class="section registration">
-    <div class="container">
-        <div class="section-header">
-        <h2>Registration</h2>
-        <!-- <p>
+        <div class="container">
+            <div class="section-header">
+                <h2>Registration</h2>
+                <!-- <p>
             Registration is free but mandatory and can be done online 
             <a style="color: #FFF; font-weight: 700;" href="#" target="_blank">here</a>.
         </p> -->
-        <p>
-            Registration will open soon! Stay tuned for updates and be ready to secure your spot at JITA 2026.
-        </p>
-        <!-- <p>According to the conference policy, AT LEAST ONE author of each accepted paper MUST register.</p> -->
+                <p>
+                    Registration will open soon! Stay tuned for updates and be ready to secure your spot at JITA 2026.
+                </p>
+                <!-- <p>According to the conference policy, AT LEAST ONE author of each accepted paper MUST register.</p> -->
+            </div>
         </div>
-    </div>
     </section>
 
     <!-- Footer -->
@@ -1358,22 +1393,28 @@
                 <div class="footer-section">
                     <h3>Contact Information</h3>
                     <p>Email: <a href="mailto:jita@universite-paris-saclay.fr">jita@universite-paris-saclay.fr</a></p>
-                    <p>Address: <a href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment 660</a></p>
+                    <p>Address: <a href="https://maps.app.goo.gl/QapHoeKPvgGVFnPb7" target="_blank">Digiteon, Bâtiment
+                            660</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Junior Committee</h3>
                     <p><a href="#">Xiaoyuan Bai (Université Paris-Saclay)</a></p>
-                    <p><a href="https://paudelasheras.net/" target="_blank">Pau De Las Heras Molins (Institut Polytechnique de Paris)</a></p>
-                    <p><a href="https://www.linkedin.com/in/chloe-godet/" target="_blank">Chloé Godet (Université Paris-Saclay)</a></p>
-                    <p><a href="https://www.linkedin.com/in/eirinikaroulla/" target="_blank">Eirini Karoulla (Université Paris-Saclay)</a></p>
+                    <p><a href="https://paudelasheras.net/" target="_blank">Pau De Las Heras Molins (Institut
+                            Polytechnique de Paris)</a></p>
+                    <p><a href="https://www.linkedin.com/in/chloe-godet/" target="_blank">Chloé Godet (Université
+                            Paris-Saclay)</a></p>
+                    <p><a href="https://www.linkedin.com/in/eirinikaroulla/" target="_blank">Eirini Karoulla (Université
+                            Paris-Saclay)</a></p>
                     <p><a href="#">Sheeja-Rani Sathyanesan Nadar (Université Paris-Saclay)</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Senior Committee</h3>
                     <p><a href="#">Mathilde Arnaud (Université Paris-Saclay)</a></p>
-                    <p><a href="https://bakirtzis.net/" target="_blank">Georgios Bakirtzis (Institut Polytechnique de Paris)</a></p>
+                    <p><a href="https://bakirtzis.net/" target="_blank">Georgios Bakirtzis (Institut Polytechnique de
+                            Paris)</a></p>
                     <p><a href="#">Vincent Chau (Université Paris-Saclay)</a></p>
-                    <p><a href="https://coucheney.github.io" target="_blank">Pierre Coucheney (Université Paris-Saclay)</a></p>
+                    <p><a href="https://coucheney.github.io" target="_blank">Pierre Coucheney (Université
+                            Paris-Saclay)</a></p>
                     <p><a href="#">Julien Signoles (Université Paris-Saclay)</a></p>
                 </div>
                 <div class="footer-section">
@@ -1382,7 +1423,7 @@
                     <p><a href="#program">Program</a></p>
                     <p><a href="#speakers">Organizers</a></p>
                     <p><a href="#registration">Registration</a></p>
-                </div>                
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 JITA 2026. All rights reserved.</p>
@@ -1449,4 +1490,5 @@
     </script>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,7 +107,7 @@
         .submission-value a:hover {
             text-decoration: underline;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
@@ -551,7 +552,8 @@
             color: #ffd700;
         }
 
-        .footer-section p, .footer-section a {
+        .footer-section p,
+        .footer-section a {
             color: #bdc3c7;
             text-decoration: none;
             line-height: 1.8;
@@ -619,7 +621,7 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-content{
+            .nav-content {
                 padding: 0 0;
             }
 
@@ -629,7 +631,7 @@
                 gap: 1rem;
             }
 
-            .header-content > div:nth-child(2) {
+            .header-content>div:nth-child(2) {
                 grid-row: 2;
                 grid-column: 1 / -1;
                 justify-content: center;
@@ -717,6 +719,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -728,6 +731,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header" style="background: white;">
@@ -739,13 +743,17 @@
             </div>
             <div style="display: flex; align-items: center; gap: 1rem;">
                 <div style="width: 180px; display: flex; justify-content: right; align-items: right;">
-                    <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
-                        <img src="../img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay" style="height: 45px; width: auto;">
+                    <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener"
+                        style="display: flex; align-items: center;">
+                        <img src="../img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay"
+                            style="height: 45px; width: auto;">
                     </a>
                 </div>
                 <div style="width: 180px; display: flex; justify-content: center; align-items: center;">
-                    <a href="https://www.ip-paris.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
-                        <img src="../img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris" style="height: 45px; width: auto;">
+                    <a href="https://www.ip-paris.fr" target="_blank" rel="noopener"
+                        style="display: flex; align-items: center;">
+                        <img src="../img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris"
+                            style="height: 45px; width: auto;">
                     </a>
                 </div>
             </div>
@@ -781,7 +789,7 @@
         <div class="hero-content">
             <h1>Welcome to JITA 2025</h1>
             <p>
-                Join us for the most innovative junior conference JITA, where Masters and PhD students 
+                Join us for the most innovative junior conference JITA, where Masters and PhD students
                 showcase groundbreaking research and ignite collaborations in Computer Science !</p>
             <a href="#submission" class="cta-button">Submit Your Paper Now</a>
         </div>
@@ -796,22 +804,28 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p> JITA 2025 is the 2nd edition of the junior conference on Theoretical and Applied Computer Science, a multidisciplinary 
-                        conference that allows Masters and PhD students in various fields of Theoretical and Applied Computer Science to present 
-                        their research results. Take the opportunity to share your research with colleagues, all the while honing your presentation 
-                        skills, receiving feedback, and broadening your knowledge of Computer Science. Any Masters or first/second-year PhD Student 
+                    <p> JITA 2025 is the 2nd edition of the junior conference on Theoretical and Applied Computer
+                        Science, a multidisciplinary
+                        conference that allows Masters and PhD students in various fields of Theoretical and Applied
+                        Computer Science to present
+                        their research results. Take the opportunity to share your research with colleagues, all the
+                        while honing your presentation
+                        skills, receiving feedback, and broadening your knowledge of Computer Science. Any Masters or
+                        first/second-year PhD Student
                         is welcome to present either their current research or ongoing works with preliminary results.
                     </p>
-                    
+
                     <p></p>
                     <div style="height: 20px;"></div>
                     <h3 style="color: #096B68;">Topics of Interest</h3>
-                    <p>Submissions are encouraged in areas including (but not limited to): 
+                    <p>Submissions are encouraged in areas including (but not limited to):
 
-                        Algorithms and Complexity, Bioinformatics, Centralized and Distributed algorithms, Cryptography and Security, 
-                        Quantum Computing, Graph theory, Human-Computer Interaction, Modeling and Simulation, Optimization, 
+                        Algorithms and Complexity, Bioinformatics, Centralized and Distributed algorithms, Cryptography
+                        and Security,
+                        Quantum Computing, Graph theory, Human-Computer Interaction, Modeling and Simulation,
+                        Optimization,
                         Virtual and Augmented Reality, Verification and Formal methods.
-                    
+
                     </p>
                 </div>
                 <div class="about-info-grid">
@@ -833,8 +847,8 @@
                             <a href="files/cfp.pdf" target="_blank" class="cta-button" download>Download CFP</a>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- Program Section -->
@@ -849,37 +863,43 @@
                     <div class="program-time">Day 1 - 9:00 AM</div>
                     <div class="program-title">Opening Keynote</div>
                     <div class="program-speaker">Dr. Sarah Johnson</div>
-                    <div class="program-description">Kick off the conference with an inspiring keynote about the future of artificial intelligence and its impact on society.</div>
+                    <div class="program-description">Kick off the conference with an inspiring keynote about the future
+                        of artificial intelligence and its impact on society.</div>
                 </div>
                 <div class="program-card">
                     <div class="program-time">Day 1 - 11:00 AM</div>
                     <div class="program-title">AI & Machine Learning Workshop</div>
                     <div class="program-speaker">Prof. Michael Chen</div>
-                    <div class="program-description">Hands-on workshop covering the latest advances in machine learning algorithms and practical applications.</div>
+                    <div class="program-description">Hands-on workshop covering the latest advances in machine learning
+                        algorithms and practical applications.</div>
                 </div>
                 <div class="program-card">
                     <div class="program-time">Day 2 - 10:00 AM</div>
                     <div class="program-title">Cloud Computing Summit</div>
                     <div class="program-speaker">Lisa Rodriguez</div>
-                    <div class="program-description">Deep dive into cloud architecture, scalability patterns, and modern deployment strategies.</div>
+                    <div class="program-description">Deep dive into cloud architecture, scalability patterns, and modern
+                        deployment strategies.</div>
                 </div>
                 <div class="program-card">
                     <div class="program-time">Day 2 - 2:00 PM</div>
                     <div class="program-title">Cybersecurity Panel</div>
                     <div class="program-speaker">Security Experts Panel</div>
-                    <div class="program-description">Industry experts discuss current threats, defense strategies, and the future of cybersecurity.</div>
+                    <div class="program-description">Industry experts discuss current threats, defense strategies, and
+                        the future of cybersecurity.</div>
                 </div>
                 <div class="program-card">
                     <div class="program-time">Day 3 - 9:30 AM</div>
                     <div class="program-title">Startup Pitch Competition</div>
                     <div class="program-speaker">Various Entrepreneurs</div>
-                    <div class="program-description">Exciting competition featuring innovative startups presenting their groundbreaking solutions.</div>
+                    <div class="program-description">Exciting competition featuring innovative startups presenting their
+                        groundbreaking solutions.</div>
                 </div>
                 <div class="program-card">
                     <div class="program-time">Day 3 - 4:00 PM</div>
                     <div class="program-title">Closing Ceremony</div>
                     <div class="program-speaker">Conference Organizers</div>
-                    <div class="program-description">Wrap up the conference with awards, recognition, and a look ahead to next year's event.</div>
+                    <div class="program-description">Wrap up the conference with awards, recognition, and a look ahead
+                        to next year's event.</div>
                 </div>
             </div>
         </div>
@@ -891,21 +911,27 @@
         <div class="container">
             <div class="section-header">
                 <h2>Paper Submission</h2>
-                <p>All submissions must be in English and submitted in PDF format. The extended abstracts, which can be up to 3 pages long, should include an abstract, a list of keywords, and references.</p>
+                <p>All submissions must be in English and submitted in PDF format. The extended abstracts, which can be
+                    up to 3 pages long, should include an abstract, a list of keywords, and references.</p>
             </div>
 
             <div class="submission-table">
                 <div class="submission-row">
                     <div class="submission-label">📄 Paper Template:</div>
-                    <div class="submission-value"><a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">Springer LNCS Guidelines</a></div>
+                    <div class="submission-value"><a
+                            href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                            target="_blank">Springer LNCS Guidelines</a></div>
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">📝 Submission Example:</div>
-                    <div class="submission-value"><a href="https://jdse-paris.github.io/jDSE2019/assets/JDSEtemplate.pdf" target="_blank">Download Example PDF</a></div>
+                    <div class="submission-value"><a
+                            href="https://jdse-paris.github.io/jDSE2019/assets/JDSEtemplate.pdf"
+                            target="_blank">Download Example PDF</a></div>
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">🔗 Submission Link:</div>
-                    <div class="submission-value"><a href="https://openreview.net/group?id=JDSE/2024/Conference" target="_blank">OpenReview – JITA 2025</a></div>
+                    <div class="submission-value"><a href="https://openreview.net/group?id=JDSE/2024/Conference"
+                            target="_blank">OpenReview – JITA 2025</a></div>
                 </div>
                 <div class="submission-row">
                     <div class="submission-label">⏳ Submission Deadline:</div>
@@ -926,18 +952,20 @@
             <!-- Junior Committee -->
             <h3 style="margin-bottom: 1rem; color: #096B68;">Junior Committee</h3>
             <div class="speakers-grid">
-                
+
                 <div class="speaker-card">
                     <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/borhan.jpg" alt="Borhaneddine Hamadou" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <img src="img/borhan.jpg" alt="Borhaneddine Hamadou"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                     </div>
                     <div class="speaker-name">Borhaneddine Hamadou</div>
                     <div class="speaker-title">PhD Student, CEA-List</div>
                     <div class="speaker-bio">-</div>
-                </div> 
+                </div>
                 <div class="speaker-card">
                     <div class="speaker-avatar" style="background: none; padding: 0;">
-                        <img src="img/Photo_noe.jpg" alt="Noé Demange" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <img src="img/Photo_noe.jpg" alt="Noé Demange"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                     </div>
                     <div class="speaker-name">Noé Demange</div>
                     <div class="speaker-title">PhD Student, Université de Versailles Paris-Saclay</div>
@@ -999,7 +1027,8 @@
         <div class="container">
             <div class="section-header">
                 <h2>Registration</h2>
-                <p>Registration is free but mandatory and can be done online <a href="https://forms.gle/your-google-form-link" target="_blank">here</a>.</p>
+                <p>Registration is free but mandatory and can be done online <a
+                        href="https://forms.gle/your-google-form-link" target="_blank">here</a>.</p>
                 <p>According to the conference policy, AT LEAST ONE author of each accepted paper MUST register.</p>
             </div>
         </div>
@@ -1135,4 +1164,5 @@
 
 
 </body>
+
 </html>

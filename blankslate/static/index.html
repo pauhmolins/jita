@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JITA</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f7f9f8'/><text x='50' y='75' text-anchor='middle' font-size='72' font-weight='bold' font-family='Segoe UI,serif' fill='%231a1a1a'>J</text></svg>" type="image/svg+xml">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f7f9f8'/><text x='50' y='75' text-anchor='middle' font-size='72' font-weight='bold' font-family='Segoe UI,serif' fill='%231a1a1a'>J</text></svg>"
+        type="image/svg+xml">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,7 +72,7 @@
             font-weight: 600;
             letter-spacing: 0.3px;
             transition: opacity 0.15s, transform 0.15s;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
             text-align: center;
         }
 
@@ -74,55 +81,96 @@
             transform: translateY(-2px);
         }
 
-        .edition-card.y2024 { background: linear-gradient(135deg, #4E4187, #F7B2B7); }
-        .edition-card.y2025 { background: linear-gradient(135deg, #096B68, #90D1CA); }
-        .edition-card.y2026 { background: linear-gradient(135deg, #2EA248, #CCE31E); box-shadow: 0 6px 24px rgba(46,162,72,0.35); transform: scale(1.1); }
+        .edition-card.y2024 {
+            background: linear-gradient(135deg, #4E4187, #F7B2B7);
+        }
 
-        .edition-card .year { font-size: 1.4rem; }
-        .edition-card .label { font-size: 0.8rem; font-weight: 400; opacity: 0.8; margin-top: 0.2rem; }
-        
+        .edition-card.y2025 {
+            background: linear-gradient(135deg, #096B68, #90D1CA);
+        }
+
+        .edition-card.y2026 {
+            background: linear-gradient(135deg, #2EA248, #CCE31E);
+            box-shadow: 0 6px 24px rgba(46, 162, 72, 0.35);
+            transform: scale(1.1);
+        }
+
+        .edition-card .year {
+            font-size: 1.4rem;
+        }
+
+        .edition-card .label {
+            font-size: 0.8rem;
+            font-weight: 400;
+            opacity: 0.8;
+            margin-top: 0.2rem;
+        }
+
         header p a {
             color: inherit;
             text-decoration: none;
         }
-        header p a:hover { text-decoration: underline; }
+
+        header p a:hover {
+            text-decoration: underline;
+        }
 
         @media (min-width: 600px) {
-            header p { text-align: justify; }
+            header p {
+                text-align: justify;
+            }
         }
 
         @media (max-width: 599px) {
-            body { padding: 1.25rem; }
-            header h1 { font-size: 2rem; }
-            header p { font-size: 1rem; }
-            .edition-card { padding: 1.25rem 1.75rem; }
-            .logo-row { flex-wrap: wrap; gap: 1.25rem; }
-            .logo-row > div { width: auto !important; }
+            body {
+                padding: 1.25rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .edition-card {
+                padding: 1.25rem 1.75rem;
+            }
+
+            .logo-row {
+                flex-wrap: wrap;
+                gap: 1.25rem;
+            }
+
+            .logo-row>div {
+                width: auto !important;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>JITA</h1>
         <h2>Junior Conference on Informatics: Theory and Applications</h2>
 
         <div class="editions">
-            <!-- Adjust as needed -->
-            <a href="https://openreview.net/group?id=JITA/2024/Conference#tab-recent-activity" class="edition-card y2024">
-            <!-- <a href="jita2025/index.html" class="edition-card y2024"> -->
-            <div class="year">JITA 2024</div>
+            <a href="https://openreview.net/group?id=JITA/2024/Conference#tab-recent-activity"
+                class="edition-card y2024">
+                <div class="year">JITA 2024</div>
                 <div class="label">1st edition</div>
             </a>
             <!-- Adjust as needed -->
             <a href="jita2025" class="edition-card y2025">
-            <!-- <a href="jita2025/index.html" class="edition-card y2025"> -->
-            <div class="year">JITA 2025</div>
+                <!-- <a href="jita2025/index.html" class="edition-card y2025"> -->
+                <div class="year">JITA 2025</div>
                 <div class="label">2nd edition</div>
             </a>
             <!-- Adjust as needed -->
             <a href="jita2026" class="edition-card y2026">
-            <!-- <a href="jita2026/index.html" class="edition-card y2026"> -->
-            <div class="year">JITA 2026</div>
+                <!-- <a href="jita2026/index.html" class="edition-card y2026"> -->
+                <div class="year">JITA 2026</div>
                 <div class="label">3rd edition (current)</div>
             </a>
         </div>
@@ -137,26 +185,34 @@
             are included for you to start building your professional network.
             <br><br>
             This event is co-organised by
-            <strong><a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener">Université Paris-Saclay (UPSaclay)</a></strong>
-            and <strong><a href="https://www.ip-paris.fr" target="_blank" rel="noopener">Institut Polytechnique de Paris (IPP)</a></strong>.
+            <strong><a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener">Université
+                    Paris-Saclay (UPSaclay)</a></strong>
+            and <strong><a href="https://www.ip-paris.fr" target="_blank" rel="noopener">Institut Polytechnique de Paris
+                    (IPP)</a></strong>.
         </p>
 
-        <div class="logo-row" style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 2rem;">
+        <div class="logo-row"
+            style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 2rem;">
             <div style="width: 200px; display: flex; justify-content: right; align-items: right;">
-                <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
+                <a href="https://www.universite-paris-saclay.fr" target="_blank" rel="noopener"
+                    style="display: flex; align-items: center;">
                     <!-- Adjust as needed -->
-                    <img src="/wp-content/themes/blankslate/static/img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay" style="height: 50px; width: auto; max-width: 100%;">
+                    <img src="/wp-content/themes/blankslate/static/img/logo-universite-paris-saclay.svg"
+                        alt="Université Paris-Saclay" style="height: 50px; width: auto; max-width: 100%;">
                     <!-- <img src="./img/logo-universite-paris-saclay.svg" alt="Université Paris-Saclay" style="height: 50px; width: auto;"> -->
                 </a>
             </div>
             <div style="width: 200px; display: flex; justify-content: center; align-items: center;">
-                <a href="https://www.ip-paris.fr" target="_blank" rel="noopener" style="display: flex; align-items: center;">
+                <a href="https://www.ip-paris.fr" target="_blank" rel="noopener"
+                    style="display: flex; align-items: center;">
                     <!-- Adjust as needed -->
-                    <img src="/wp-content/themes/blankslate/static/img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris" style="height: 50px; width: auto; max-width: 100%;">
+                    <img src="/wp-content/themes/blankslate/static/img/ip-paris-logo.svg"
+                        alt="Institut Polytechnique de Paris" style="height: 50px; width: auto; max-width: 100%;">
                     <!-- <img src="./img/ip-paris-logo.svg" alt="Institut Polytechnique de Paris" style="height: 50px; width: auto;"> -->
                 </a>
             </div>
         </div>
     </header>
 </body>
+
 </html>
