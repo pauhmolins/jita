@@ -58,6 +58,7 @@
             display: block;
             text-decoration: none;
             padding: 1.5rem 2.5rem;
+            margin: 0.25rem 0.5rem;
             border-radius: 10px;
             color: white;
             font-size: 1.15rem;
@@ -73,8 +74,9 @@
             transform: translateY(-2px);
         }
 
+        .edition-card.y2024 { background: linear-gradient(135deg, #4E4187, #F7B2B7); }
         .edition-card.y2025 { background: linear-gradient(135deg, #096B68, #90D1CA); }
-        .edition-card.y2026 { background: linear-gradient(135deg, #2EA248, #CCE31E); box-shadow: 0 6px 24px rgba(46,162,72,0.35); transform: scale(1.06); }
+        .edition-card.y2026 { background: linear-gradient(135deg, #2EA248, #CCE31E); box-shadow: 0 6px 24px rgba(46,162,72,0.35); transform: scale(1.1); }
 
         .edition-card .year { font-size: 1.4rem; }
         .edition-card .label { font-size: 0.8rem; font-weight: 400; opacity: 0.8; margin-top: 0.2rem; }
@@ -106,16 +108,22 @@
 
         <div class="editions">
             <!-- Adjust as needed -->
+            <a href="https://openreview.net/group?id=JITA/2024/Conference#tab-recent-activity" class="edition-card y2024">
+            <!-- <a href="jita2025/index.html" class="edition-card y2024"> -->
+            <div class="year">JITA 2024</div>
+                <div class="label">1st edition</div>
+            </a>
+            <!-- Adjust as needed -->
             <a href="jita2025" class="edition-card y2025">
             <!-- <a href="jita2025/index.html" class="edition-card y2025"> -->
             <div class="year">JITA 2025</div>
-                <div class="label">Previous edition</div>
+                <div class="label">2nd edition</div>
             </a>
             <!-- Adjust as needed -->
             <a href="jita2026" class="edition-card y2026">
             <!-- <a href="jita2026/index.html" class="edition-card y2026"> -->
             <div class="year">JITA 2026</div>
-                <div class="label">Current edition</div>
+                <div class="label">3rd edition (current)</div>
             </a>
         </div>
 
