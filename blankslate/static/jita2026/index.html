@@ -278,6 +278,10 @@
             padding: 0 2rem;
         }
 
+        #speakers .container {
+            max-width: 1600px;
+        }
+
         .section-header {
             text-align: center;
             margin-bottom: 3rem;
@@ -357,8 +361,9 @@
         /* Program Section */
         .program-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
             gap: 2rem;
+            justify-content: center;
         }
 
         .program-card {
@@ -368,6 +373,10 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             border-left: 5px solid #2EA248;
+        }
+
+        .program-card>*:last-child {
+            margin-bottom: 0;
         }
 
         .program-card:hover {
@@ -1029,7 +1038,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#program">Program</a></li>
                 <li><a href="#submission">Submission</a></li>
-                <li><a href="#speakers">Organizers</a></li>
+                <li><a href="#organizers">Organizers</a></li>
                 <li><a href="#registration">Registration</a></li>
                 <!-- <li><a href="../index.html">Editions</a></li> -->
                 <li><a href="https://www.jita.universite-paris-saclay.fr/">Editions</a></li>
@@ -1108,8 +1117,7 @@
             </div>
     </section>
 
-    <!-- Keynotes Section (commented out until speakers are confirmed) -->
-    <!--
+    <!-- Keynotes Section -->
     <section id="speakers" class="section">
         <div class="container">
             <div class="section-header">
@@ -1117,23 +1125,26 @@
             </div>
             <div class="program-grid">
                 <div class="program-card">
-                    <!- - Keynote 1: fill in program-title, program-speaker (name), program-speaker (affiliation), program-description - ->
-                    <div class="program-title">TBD</div>
-                    <div class="program-speaker">TBD</div>
-                    <!- - <div class="program-speaker">Affiliation</div> - ->
-                    <!- - <div class="program-description">Abstract</div> - ->
+                    <div class="program-title">Digital Collective Decisions</div>
+                    <div class="program-speaker">Zoi Terzopoulou</div>
+                    <div class="program-speaker">Research scientist at CNRS, GATE Lyon/Saint-Etienne</div>
+                    <!-- <div class="program-description">Abstract</div> -->
                 </div>
                 <div class="program-card">
-                    <!- - Keynote 2: fill in program-title, program-speaker (name), program-speaker (affiliation), program-description - ->
                     <div class="program-title">TBD</div>
-                    <div class="program-speaker">TBD</div>
-                    <!- - <div class="program-speaker">Affiliation</div> - ->
-                    <!- - <div class="program-description">Abstract</div> - ->
+                    <div class="program-speaker">Carola Doerr</div>
+                    <div class="program-speaker">Research director at CNRS, Sorbonne Université</div>
+                    <!-- <div class="program-description">Abstract</div> -->
+                </div>
+                <div class="program-card">
+                    <div class="program-title">TBD</div>
+                    <div class="program-speaker">Prof. Raphael Caire</div>
+                    <div class="program-speaker">Associate professor<br>at Grenoble Institute of Technology</div>
+                    <!-- <div class="program-description">Abstract</div> -->
                 </div>
             </div>
         </div>
     </section>
-    -->
 
     <!-- Program Section -->
     <section id="program" class="section">
@@ -1221,7 +1232,8 @@
                             <tr>
                                 <td class="jita-time">16:15 - 17:00</td>
                                 <td class="jita-activity">
-                                    <span class="jita-keynote">Keynote 3 — TBD</span>
+                                    <span class="jita-keynote">Keynote 3 — Zoi Terzopoulou: Digital Collective
+                                        Decisions</span>
                                 </td>
                             </tr>
                             <tr>
@@ -1273,8 +1285,8 @@
         </div>
     </section>
 
-    <!-- Speakers Section -->
-    <section id="speakers" class="section">
+    <!-- Organizers Section -->
+    <section id="organizers" class="section">
         <div class="container">
             <div class="section-header">
                 <h2>Organizing Committee</h2>
@@ -1421,7 +1433,7 @@
                     <h3>Quick Links</h3>
                     <p><a href="#about">About</a></p>
                     <p><a href="#program">Program</a></p>
-                    <p><a href="#speakers">Organizers</a></p>
+                    <p><a href="#organizers">Organizers</a></p>
                     <p><a href="#registration">Registration</a></p>
                 </div>
             </div>
