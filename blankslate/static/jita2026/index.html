@@ -74,7 +74,7 @@
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             padding: 2rem;
-            max-width: 900px;
+            max-width: 500px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -319,6 +319,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             align-items: center;
+            text-align: justify;
         }
 
         .about-text {
@@ -361,7 +362,7 @@
         /* Program Section */
         .program-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 550px));
             gap: 2rem;
             justify-content: center;
         }
@@ -408,6 +409,7 @@
             font-size: 0.95rem;
             color: #555;
             line-height: 1.6;
+            text-align: justify;
         }
 
         /* Committee titles */
@@ -818,7 +820,7 @@
             background: linear-gradient(135deg, #2EA248 0%, #CCE31E 100%);
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 900px;
+            max-width: 1200px;
             width: 100%;
             overflow: hidden;
             margin: 20px auto;
@@ -1129,15 +1131,15 @@
             </div>
             <div class="program-grid">
                 <div class="program-card">
-                    <div class="program-title">Digital Collective Decisions</div>
-                    <div class="program-speaker">Zoi Terzopoulou</div>
-                    <div class="program-speaker">Research scientist<br>at CNRS, GATE Lyon/Saint-Etienne</div>
+                    <div class="program-title">AI-Driven Solutions for Modern Power Grid Operation and Control</div>
+                    <div class="program-speaker">Raphael Caire</div>
+                    <div class="program-speaker">Associate professor at Grenoble Institute of Technology</div>
                     <!-- <div class="program-description">Abstract</div> -->
                 </div>
                 <div class="program-card">
-                    <div class="program-title">TBD</div>
-                    <div class="program-speaker">Raphael Caire</div>
-                    <div class="program-speaker">Associate professor<br>at Grenoble Institute of Technology</div>
+                    <div class="program-title">Digital Collective Decisions<br><br></div>
+                    <div class="program-speaker">Zoi Terzopoulou</div>
+                    <div class="program-speaker">Research scientist at CNRS, GATE Lyon/Saint-Etienne</div>
                     <!-- <div class="program-description">Abstract</div> -->
                 </div>
             </div>
@@ -1187,12 +1189,24 @@
                                 <td class="jita-time">10:30 - 12:00</td>
                                 <td class="jita-activity">
                                     <div>Oral Session 1</div>
-                                    <!-- <div class="jita-papers-list">
+                                    <div class="jita-papers-list">
                                         <div class="jita-paper-item">
-                                            <div class="jita-paper-title">TBD</div>
-                                            <div class="jita-paper-authors">TBD</div>
+                                            <div class="jita-paper-title">Semantic Feedback Metrics for Dolev-Yao Fuzzing of Protocol Implementations</div>
+                                            <div class="jita-paper-authors">Lucie-Hélène Cuingnet</div>
                                         </div>
-                                    </div> -->
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Sage-I: Salience-Aware, Geometry-Free Compression of Multi-Vector Document Indexes</div>
+                                            <div class="jita-paper-authors">Souhil Ouchene, Mustapha Lebbah, Bilal Faye, Hanane Azzag</div>
+                                        </div>
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Creation of molecular cage based on force directed algorithm</div>
+                                            <div class="jita-paper-authors">Lysa Percevault</div>
+                                        </div>
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Stepwise-Stationary Distributed Orchestration for Sovereign Multi-Operator Cloud Systems</div>
+                                            <div class="jita-paper-authors">Lazhar Benchelloug</div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -1202,19 +1216,31 @@
                             <tr>
                                 <td class="jita-time">13:30 - 13:45</td>
                                 <td class="jita-activity">
-                                    <span class="jita-keynote">Presentation — Arthur Troupel: Open Science</span>
+                                    <span class="jita-keynote">Open Science Presentation — Arthur Troupel</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="jita-time">13:45 - 15:05</td>
                                 <td class="jita-activity">
                                     <div>Oral Session 2</div>
-                                    <!-- <div class="jita-papers-list">
+                                    <div class="jita-papers-list">
                                         <div class="jita-paper-item">
-                                            <div class="jita-paper-title">TBD</div>
-                                            <div class="jita-paper-authors">TBD</div>
+                                            <div class="jita-paper-title">Utility-Peak Itemset Mining with Constraint Programming</div>
+                                            <div class="jita-paper-authors">Chaima Hamdi</div>
                                         </div>
-                                    </div> -->
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">A Framework for Hybrid Genetic Search</div>
+                                            <div class="jita-paper-authors">Sama Gharib Ali Barura</div>
+                                        </div>
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Graph discovery through partition oracles</div>
+                                            <div class="jita-paper-authors">Bianca Oancea, Hoang La, Johanne Cohen</div>
+                                        </div>
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Tight ETH Lower Bound for Unweigthed Dominating Set Parameterized by Rank-width</div>
+                                            <div class="jita-paper-authors">Achille Signoret</div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -1225,18 +1251,26 @@
                                 <td class="jita-time">15:30 - 16:30</td>
                                 <td class="jita-activity">
                                     <div>Oral Session 3</div>
-                                    <!-- <div class="jita-papers-list">
+                                    <div class="jita-papers-list">
                                         <div class="jita-paper-item">
-                                            <div class="jita-paper-title">TBD</div>
-                                            <div class="jita-paper-authors">TBD</div>
+                                            <div class="jita-paper-title">Qualification Game: A Game-Theoretic Framework for Overcoming Drug Resistance</div>
+                                            <div class="jita-paper-authors">Louison Crépin</div>
                                         </div>
-                                    </div> -->
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Evaluation of French medical summaries: reproducible investigation of five reference-based metrics</div>
+                                            <div class="jita-paper-authors">Marina Hornero Merino, Laura Zanella, Pierre Zweigenbaum, Aurélie Névéol</div>
+                                        </div>
+                                        <div class="jita-paper-item">
+                                            <div class="jita-paper-title">Adaptive robust optimization for integrated facility location and staffing in home health care networks</div>
+                                            <div class="jita-paper-authors">Maïna Boivent, Salma Makboul, Feng Chu</div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="jita-time">16:30 - 17:15</td>
                                 <td class="jita-activity">
-                                    <span class="jita-keynote">Keynote 2 — Zoi Terzopoulou: Digital Collective Decisions</span>
+                                    <span class="jita-keynote">Keynote 2 — Zoi Terzopoulou</span>
                                 </td>
                             </tr>
                             <tr class="jita-highlight">
